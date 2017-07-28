@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- CSS /////////////////////////////////////////////////////////
+    - https://github.com/filamentgroup/loadCSS
+
+    Using 'gulp-usemin' to concatenate CSS files in production
+    Following a Mobile First approach, all media queries are
+    combined in a separate file
+
+    Note: <link ... media="screen and (min-width: 40em)" />
+    only defines when CSS will be applied, it will not block
+    the file from being downloaded
+    -->
+
+    <!-- build:css styles/m.css -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/styleguide.css" />
+    <!-- endbuild -->
+
+    <!-- SEO /////////////////////////////////////////////////////////
+    - http://support.google.com/webmasters/bin/answer.py?hl=nl&answer=79812&topic=2371375&ctx=topic
+    - http://www.iacquire.com/blog/18-meta-tags-every-webpage-should-have-in-2013
+    - http://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md
+    - http://moz.com/blog/meta-data-templates-123
+
+    Set meta-data and force search engines to display this information
+    in search results (this prevents caching of meta-data)
+    -->
+
+    <title>ACPaaS Branding</title>
+
+    <meta name="description" content="ACPaaS Branding" />
+    <meta name="robots" content="noodp, noydir" />
+
+
+    <!-- META-TAGS FOR MOBILE ////////////////////////////////////////
+    - http://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+    - http://www.metatags.nl/mobiele_metatags_voor_de_smartphone
+    - http://github.com/h5bp/mobile-boilerplate/wiki/The-Markup
+
+    Let search engines know this page is optimized for mobile devices
+    and enable smooth font rendering on IE Mobile
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta http-equiv="cleartype" content="on" />
+    -->
+
+    <!--
+    Set the viewport for IOS to enable media queries and prevent phone
+    numbers from being displayed as hyperlinks (IOS default behavior)
+    Note: don't disable the ability to zoom, it's bad UX
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no" />
+    -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+
+</head>
+<body class="has-header">
+    <header class="o-header o-header--fixed"></header>
+
+    <main>
+        <div class="u-wrapper d-h1">
+            <div class="u-container">
+                <h1>ACPaaS Branding Styleguide <small>v{{ VERSION_INFO.version }}</small></h1>
+            </div>
+        </div>
+
+        {% include "templates/quarks.njk" %}
+
+        {% include "templates/base.njk" %}
+
+        {% include "templates/utilities.njk" %}
+
+        {% include "templates/atoms.njk" %}
+
+        {% include "templates/molecules.njk" %}
+
+        {% include "templates/organisms.njk" %}
+
+        <footer class="o-footer">
+            <span class="o-footer__label">© 2017 Digipolis</span>
+
+            <a href="#" class="o-footer__button a-button a-button--secondary has-icon">
+                <i class="fa fa-arrow-up"></i>
+            </a>
+        </footer>
+    </main>
+</body>
+</html>

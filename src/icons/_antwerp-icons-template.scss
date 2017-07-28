@@ -1,0 +1,37 @@
+// -------------------------------------------------------------------
+// :: ICON FONT
+// -------------------------------------------------------------------
+// Created with the 'gulp iconfont'-task, the source-template
+// of this file can be found in fonts/icon-sources/_template.scss
+
+@include font-face('<%= fontName %>', '<%= fontPath %>/<%= fontName %>');
+
+%icon-template {
+  -moz-osx-font-smoothing: grayscale; // sass-lint:disable-line no-vendor-prefixes
+  -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
+  font-family: '<%= fontName %>';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: inherit;
+  speak: none;
+  text-transform: none;
+  vertical-align: middle;
+}
+
+
+// -------------------------------------------------------------------
+// :: CLASSES
+// -------------------------------------------------------------------
+// Note: Use single quotes ('') for content in pseudo-selectors
+// as double quotes ("") are not supported in <IE9
+<% _.each(glyphs, function(glyph) { %>
+%<%= className %>-<%= glyph.name %> {
+  @extend %icon-template;
+  content: '\<%= glyph.unicode[0].charCodeAt(0).toString(16).toUpperCase() %>';
+}
+
+.<%= className %>-<%= glyph.name %>:before {
+  @extend %<%= className %>-<%= glyph.name %>;
+}
+<% }); %>

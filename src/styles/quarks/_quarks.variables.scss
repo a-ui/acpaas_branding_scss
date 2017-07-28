@@ -1,0 +1,17 @@
+/**
+ * VARIABLE OVERRIDES
+ * -------------------------------------------------------------------
+ */
+
+
+$font-family-base: 'Open Sans';
+$font-family-headings: 'Slabo 27px';
+$font-family-monospace: 'Roboto Mono', Menlo, Monaco, Consolas, 'Courier New', monospace;
+$brand-primary: #009ed2;
+$brand-secondary: #0080a4;
+$header-bg: darken($brand-primary, 4%);
+$header-border: rgba($black, 0);
+$spacer: 1.5rem;
+$header-height: calc(3rem + 1px);
+$icon-list-hover-color: $tangerine;
+$spacer-xx: $spacer * 3.5;

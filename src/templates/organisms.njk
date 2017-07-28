@@ -1,0 +1,365 @@
+<div class="u-wrapper d-h2">
+    <div class="u-container">
+        <h2>Organisms</h2>
+    </div>
+</div>
+<div class="u-wrapper">
+    <div class="u-container">
+        <a name="organisms-footer"></a>
+        <h3 class="d-h3">Footer</h3>
+        <span class="d-file">organisms/organisms.footer</span>
+        <div class="d">
+            <div>
+                <p>For a visible example of the footer, take a look at the very bottom of this page.</p>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;footer class="o-footer"&gt;
+  &lt;span class="o-footer__label"&gt;© 2017 Stad Antwerpen&lt;/span&gt;
+  &lt;a href="#" class="o-footer__button a-button a-button--secondary has-icon"&gt;
+    &lt;i class="fa fa-arrow-up"&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/footer&gt;</code></pre>
+            </div>
+        </div>
+
+        <a name="organisms-header"></a>
+        <h3 class="d-h3">Header</h3>
+        <span class="d-file">organisms/organisms.header</span>
+        <div class="d">
+            <div>
+                <p>For a visible example of the header, take a look at the very top of this page.</p>
+                <div class="m-alert d-alert u-margin-bottom">
+                    <p>In order to make the header stay on top, just add the <code>.has-header</code> class to the <code>body</code> tag and the <code>o-header--fixed</code> class to the header, as demonstrated in the example.</p>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;header class="o-header"&gt;
+  &lt;a href="#" class="o-header__logo"&gt;
+    &lt;img src="images/a-logo.svg" alt="Official logo Antwerpen"&gt;
+  &lt;/a&gt;
+&lt;/header&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;body class="has-header"&gt;
+
+&lt;header class="o-header o-header--fixed"&gt;
+  ...
+&lt;/header&gt;</code></pre>
+            </div>
+        </div>
+
+        <a name="organisms-slideshow"></a>
+        <h3 class="d-h3">Slideshow</h3>
+        <h4 class="d-h4">Regular slideshow</h4>
+        <span class="d-file">organisms/organisms.slideshow</span>
+        <div class="d">
+            <div>
+                <div class="o-slideshow">
+                    <div class="o-slideshow__inner">
+                        <div class="o-slideshow__prev"></div>
+                        <div class="o-slideshow__slides">
+                            <figure class="o-slideshow__slide is-active">
+                                <div class="o-slideshow__image">
+                                    <div class="m-image">
+                                        <img src="http://lorempixel.com/1000/500/fashion/5" alt="slideshow image 1">
+                                        <div class="m-image__copyright a-copyright" aria-haspopup="true">
+                                            <div class="a-copyright__sign"><span class="fa fa-copyright"></span></div>
+                                            <span class="a-copyright__label">Lorem Pixel</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <figure class="o-slideshow__slide">
+                                <div class="o-slideshow__image">
+                                    <div class="m-image">
+                                        <img src="http://lorempixel.com/1000/500/fashion/7" alt="slideshow image 2">
+                                        <div class="m-image__copyright a-copyright" aria-haspopup="true">
+                                            <div class="a-copyright__sign"><span class="fa fa-copyright"></span></div>
+                                            <span class="a-copyright__label">Lorem Pixel</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <figure class="o-slideshow__slide">
+                                <div class="o-slideshow__image">
+                                    <div class="m-image">
+                                        <img src="http://lorempixel.com/1000/500/fashion/10" alt="slideshow image 3">
+                                        <div class="m-image__copyright a-copyright" aria-haspopup="true">
+                                            <div class="a-copyright__sign"><span class="fa fa-copyright"></span></div>
+                                            <span class="a-copyright__label">Lorem Pixel</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="o-slideshow__next"></div>
+                    </div>
+                    <figcaption class="o-slideshow__footer">
+                        <span class="o-slideshow__counter">1 | 3</span>
+                        Some fancy caption about this photo
+                    </figcaption>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="o-slideshow"&gt;
+  &lt;div class="o-slideshow__inner"&gt;
+    &lt;div class="o-slideshow__prev"&gt;&lt;/div&gt;
+    &lt;div class="o-slideshow__slides"&gt;
+      &lt;figure class="o-slideshow__slide is-active"&gt;
+        &lt;div class="o-slideshow__image"&gt;
+          &lt;div class="m-image"&gt;
+            &lt;img src="http://lorempixel.com/1000/500/fashion/5" alt="slideshow image 1"&gt;
+            &lt;div class="m-image__copyright a-copyright" aria-haspopup="true"&gt;
+              &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright"&gt;&lt;/span&gt;&lt;/div&gt;
+              &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/figure&gt;
+      &lt;figure class="o-slideshow__slide"&gt;
+        &lt;div class="o-slideshow__image"&gt;
+          &lt;div class="m-image"&gt;
+            &lt;img src="http://lorempixel.com/1000/500/fashion/7" alt="slideshow image 2"&gt;
+            &lt;div class="m-image__copyright a-copyright" aria-haspopup="true"&gt;
+              &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright"&gt;&lt;/span&gt;&lt;/div&gt;
+              &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/figure&gt;
+      &lt;figure class="o-slideshow__slide"&gt;
+        &lt;div class="o-slideshow__image"&gt;
+          &lt;div class="m-image"&gt;
+            &lt;img src="http://lorempixel.com/1000/500/fashion/10" alt="slideshow image 3"&gt;
+            &lt;div class="m-image__copyright a-copyright" aria-haspopup="true"&gt;
+              &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright"&gt;&lt;/span&gt;&lt;/div&gt;
+              &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/figure&gt;
+    &lt;/div&gt;
+    &lt;div class="o-slideshow__next"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;figcaption class="o-slideshow__footer"&gt;
+    &lt;span class="o-slideshow__counter"&gt;1 | 3&lt;/span&gt;
+    Some fancy caption about this photo
+  &lt;/figcaption&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <h4 class="d-h4">Slideshow overlay</h4>
+        <div class="d">
+            <div>
+                <div class="a-input d-overlay">
+                    <div class="a-switch">
+                        <label class="a-switch__label">Hide slideshow overlay</label>
+                        <div class="a-switch__toggle">
+                            <input type="checkbox" name="input-slideshow" id="input-slideshow">
+                            <label for="input-slideshow"></label>
+                            <div class="m-overlay">
+                                <label for="input-slideshow"><a class="m-overlay__button"><span class="fa fa-close"></span></a></label>
+                                <div class="m-overlay__slideshow o-slideshow o-slideshow--transparent">
+                                    <div class="o-slideshow__inner">
+                                        <div class="o-slideshow__prev o-slideshow__prev--outside"></div>
+                                        <div class="o-slideshow__slides">
+                                            <figure class="o-slideshow__slide is-active">
+                                                <div class="o-slideshow__image">
+                                                    <div class="m-image">
+                                                        <img src="http://lorempixel.com/1900/950/fashion/5" alt="slideshow image 1">
+                                                        <div class="m-image__copyright a-copyright" aria-haspopup="true">
+                                                            <div class="a-copyright__sign"><span class="fa fa-copyright"></span></div>
+                                                            <span class="a-copyright__label">Lorem Pixel</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </figure>
+                                            <figure class="o-slideshow__slide">
+                                                <div class="o-slideshow__image">
+                                                    <div class="m-image">
+                                                        <img src="http://lorempixel.com/1000/500/fashion/7" alt="slideshow image 2">
+                                                        <div class="m-image__copyright a-copyright" aria-haspopup="true">
+                                                            <div class="a-copyright__sign"><span class="fa fa-copyright"></span></div>
+                                                            <span class="a-copyright__label">Lorem Pixel</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </figure>
+                                            <figure class="o-slideshow__slide">
+                                                <div class="o-slideshow__image">
+                                                    <div class="m-image">
+                                                        <img src="http://lorempixel.com/1000/500/fashion/10" alt="slideshow image 3">
+                                                        <div class="m-image__copyright a-copyright" aria-haspopup="true">
+                                                            <div class="a-copyright__sign"><span class="fa fa-copyright"></span></div>
+                                                            <span class="a-copyright__label">Lorem Pixel</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </figure>
+                                        </div>
+                                        <div class="o-slideshow__next o-slideshow__next--outside"></div>
+                                    </div>
+                                    <figcaption class="o-slideshow__footer">
+                                        <span class="o-slideshow__counter">1 | 3</span>
+                                        Some fancy caption about this photo. Click the "X" in the top right corner to close the slideshow.
+                                    </figcaption>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="a-switch__label">Show slideshow overlay</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="m-overlay"&gt;
+  &lt;button class="m-overlay__button"&gt;
+    &lt;span class="fa fa-close"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;div class="m-overlay__slideshow o-slideshow o-slideshow--transparent"&gt;
+    &lt;div class="o-slideshow__inner"&gt;
+      &lt;div class="o-slideshow__prev o-slideshow__prev--outside"&gt;&lt;/div&gt;
+      &lt;div class="o-slideshow__slides"&gt;
+        &lt;figure class="o-slideshow__slide is-active"&gt;
+          &lt;div class="o-slideshow__image"&gt;
+            &lt;div class="m-image"&gt;
+              &lt;img src="http://lorempixel.com/1000/500/fashion/5" alt="slideshow image 1"&gt;
+              &lt;div class="m-image__copyright a-copyright" aria-haspopup="true"&gt;
+                &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright"&gt;&lt;/span&gt;&lt;/div&gt;
+                &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/figure&gt;
+        &lt;figure class="o-slideshow__slide"&gt;
+          &lt;div class="o-slideshow__image"&gt;
+            &lt;div class="m-image"&gt;
+              &lt;img src="http://lorempixel.com/1000/500/fashion/7" alt="slideshow image 2"&gt;
+              &lt;div class="m-image__copyright a-copyright" aria-haspopup="true"&gt;
+                &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright"&gt;&lt;/span&gt;&lt;/div&gt;
+                &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/figure&gt;
+        &lt;figure class="o-slideshow__slide"&gt;
+          &lt;div class="o-slideshow__image"&gt;
+            &lt;div class="m-image"&gt;
+              &lt;img src="http://lorempixel.com/1000/500/fashion/10" alt="slideshow image 3"&gt;
+              &lt;div class="m-image__copyright a-copyright" aria-haspopup="true"&gt;
+                &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright"&gt;&lt;/span&gt;&lt;/div&gt;
+                &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/figure&gt;
+      &lt;/div&gt;
+      &lt;div class="o-slideshow__next o-slideshow__next--outside"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;figcaption class="o-slideshow__footer"&gt;
+      &lt;span class="o-slideshow__counter"&gt;1 | 3&lt;/span&gt;
+      Some fancy caption about this photo
+    &lt;/figcaption&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <a name="organisms-tag-list"></a>
+        <h3 class="d-h3">Tag list</h3>
+        <span class="d-file">organisms/organisms.tag-list</span>
+        <div class="d">
+            <div>
+                <ul class="o-tag-list">
+                    <li class="m-tag">
+                        <span class="m-tag__label">Thomas Edison</span>
+                    </li>
+                    <li class="m-tag">
+                        <span class="m-tag__label">Leonardo da Vinci</span>
+                    </li>
+                    <li class="m-tag">
+                        <span class="m-tag__label">Albert Einstein</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="o-tag-list"&gt;
+  &lt;li class="m-tag"&gt;&lt;span class="m-tag__label"&gt;Thomas Edison&lt;/span&gt;&lt;/li&gt;
+  &lt;li class="m-tag"&gt;&lt;span class="m-tag__label"&gt;Leonardo da Vinci&lt;/span&gt;&lt;/li&gt;
+  &lt;li class="m-tag"&gt;&lt;span class="m-tag__label"&gt;Albert Einstein&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class="o-tag-list"&gt;
+  &lt;li class="m-tag"&gt;&lt;span class="m-tag__label"&gt;Thomas Edison&lt;/span&gt;&lt;/li&gt;
+  &lt;li class="m-tag"&gt;&lt;span class="m-tag__label"&gt;Leonardo da Vinci&lt;/span&gt;&lt;/li&gt;
+  &lt;li class="m-tag"&gt;&lt;span class="m-tag__label"&gt;Albert Einstein&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <ul class="o-tag-list">
+                    <li class="m-tag">
+                        <span class="m-tag__label">Thomas Edison</span>
+                        <button class="a-button-transparent a-button--small a-button--danger has-icon"><i class="fa fa-close"></i></button>
+                    </li>
+                    <li class="m-tag">
+                        <span class="m-tag__label">Leonardo da Vinci</span>
+                        <button class="a-button-transparent a-button--small a-button--danger has-icon"><i class="fa fa-close"></i></button>
+                    </li>
+                    <li class="m-tag">
+                        <span class="m-tag__label">Albert Einstein</span>
+                        <button class="a-button-transparent a-button--small a-button--danger has-icon"><i class="fa fa-close"></i></button>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="o-tag-list"&gt;
+  &lt;li class="m-tag"&gt;
+    &lt;span class="m-tag__label"&gt;Thomas Edison&lt;/span&gt;
+    &lt;button class="a-button-transparent a-button--small a-button--danger has-icon"&gt;&lt;i class="fa fa-close"&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class="m-tag"&gt;
+    &lt;span class="m-tag__label"&gt;Leonardo da Vinci&lt;/span&gt;
+    &lt;button class="a-button-transparent a-button--small a-button--danger has-icon"&gt;&lt;i class="fa fa-close"&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class="m-tag"&gt;
+    &lt;span class="m-tag__label"&gt;Albert Einstein&lt;/span&gt;
+    &lt;button class="a-button-transparent a-button--small a-button--danger has-icon"&gt;&lt;i class="fa fa-close"&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <ul class="o-tag-list">
+                    <li class="m-tag">
+                        <button class="a-button a-button--default a-button--small has-icon"><i class="fa fa-check"></i></button>
+                        <span class="m-tag__label">Thomas Edison</span>
+                    </li>
+                    <li class="m-tag">
+                        <button class="a-button a-button--success a-button--small has-icon"><i class="fa fa-check"></i></button>
+                        <span class="m-tag__label">Leonardo da Vinci</span>
+                    </li>
+                    <li class="m-tag">
+                        <button class="a-button a-button a-button--small has-icon"><i class="fa fa-arrows"></i></button>
+                        <span class="m-tag__label">Albert Einstein</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="o-tag-list"&gt;
+  &lt;li class="m-tag"&gt;
+    &lt;button class="a-button a-button--default a-button--small has-icon"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;span class="m-tag__label"&gt;Thomas Edison&lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li class="m-tag"&gt;
+    &lt;button class="a-button a-button--success a-button--small has-icon"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;span class="m-tag__label"&gt;Leonardo da Vinci&lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li class="m-tag"&gt;
+    &lt;button class="a-button a-button a-button--small has-icon"&gt;&lt;i class="fa fa-arrows"&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;span class="m-tag__label"&gt;Albert Einstein&lt;/span&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+    </div>
+</div>
