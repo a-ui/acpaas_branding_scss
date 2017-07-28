@@ -83,7 +83,6 @@ function stripDefaults(values) {
         }
         // console.log(colors[key])
     });
-    console.log(response);
 
     return response;
 }
