@@ -1,3 +1,8 @@
 **/.*
 gulp
 Gulpfile.js
+src
+docs
+*.yml
+*.js
+*.md
