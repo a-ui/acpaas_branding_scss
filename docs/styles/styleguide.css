@@ -191,6 +191,21 @@
 /**
  * Z-INDEXES
  * -------------------------------------------------------------------
+ * http://www.sitepoint.com/better-solution-managing-z-index-sass/
+ *
+ * Use like this:
+ *   z-index: layer("overlay");
+ *     where overlay is a list item of the default list "$z-indexes" (see below)
+ *
+ * The list is also upgradeable in that nesting is permitted, e.g.:
+ * $z-indexes: (
+ *   'modal': (
+ *     'back': 50,
+ *     'front': 60
+ *   ),
+ *   'navigation': 40,
+ *   ...
+ * )
  */
 
 /**
@@ -207,6 +222,12 @@
  * LINKS
  * -------------------------------------------------------------------
  * Define text and hover color for each hyperlink
+ */
+
+/**
+ * LISTS
+ * -------------------------------------------------------------------
+ * Define default paddings for lists
  */
 
 /**
@@ -590,6 +611,10 @@ footer {
 
 .d-flyout--no-padding {
 	margin-bottom: 3rem;
+}
+
+.d-flyout--opens-above {
+	margin-bottom: 6rem;
 }
 
 .d-icon-list {

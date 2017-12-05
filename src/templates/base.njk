@@ -6,6 +6,24 @@
 </div>
 <div class="u-wrapper">
     <div class="u-container">
+        <a name="base-antwerpen-icons"></a>
+        <h3 class="d-h3">Antwerpen icons</h3>
+        <span class="d-file">base/base.antwerpen-icons</span>
+        <div class="d">
+            <div>
+                <ul class="a-list--unstyled d-list d-list__antwerpen-icons">
+                    {% for value in ICONS %}
+                        <li>
+                            <i class="d-font d-font-lg icon-{{ value }}"></i>
+                            <code>&lt;i class="icon-{{ value }}"&gt;&lt;/i&gt;</code>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+
+
         <a name="base-layout"></a>
         <h3 class="d-h3">Layout</h3>
         <span class="d-file">base/base.layout</span>
@@ -83,6 +101,21 @@
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="h6"&gt;Heading 6&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-alert d-alert">
+                    In some cases, it might be necessary to use the base font as font family for the headings. In that case, add the class <code>has-base-font</code> to your heading.
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;h1 class="has-base-font"&gt;Heading 1&lt;/h1&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;h2 class="has-base-font"&gt;Heading 2&lt;/h2&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;h3 class="has-base-font"&gt;Heading 3&lt;/h3&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;h4 class="has-base-font"&gt;Heading 4&lt;/h4&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;h5 class="has-base-font"&gt;Heading 5&lt;/h5&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;h6 class="has-base-font"&gt;Heading 6&lt;/h6&gt;</code></pre>
             </div>
         </div>
         <div class="d">

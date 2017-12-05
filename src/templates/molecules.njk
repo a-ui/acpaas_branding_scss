@@ -398,6 +398,98 @@
             </div>
         </div>
 
+        <a name="molecules-collapsible-list"></a>
+        <h3 class="d-h3">Collapsible list</h3>
+        <span class="d-file">molecules/molecules.collapsible-list</span>
+        <div class="d">
+            <div>
+                <ul class="m-collapsible-list">
+                    <li class="m-collapsible-list__item">
+                        <a href="void(0);">
+                            <span>First item</span>
+                        </a>
+                    </li>
+                    <li class="m-collapsible-list__item">
+                        <a href="void(0);">
+                            <span class="fa fa-fw fa-angle-down"></span>
+                            <span>Second collapsible item</span>
+                        </a>
+                        <ul>
+                            <li class="m-collapsible-list__item">
+                                <a href="void(0);">
+                                    <span class="fa fa-fw fa-angle-down"></span>
+                                    <span>First collapsible subitem</span>
+                                </a>
+                                <ul>
+                                    <li class="m-collapsible-list__item is-active">
+                                        <a href="void(0);">
+                                            <span>First active subsubitem</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="m-collapsible-list__item">
+                                <a href="void(0);">
+                                    <span class="fa fa-fw fa-angle-right"></span>
+                                    <span>Second collapsed subitem</span>
+                                </a>
+                                <ul class="is-collapsed">
+                                    <li class="m-collapsible-list__item">
+                                        <a href="void(0);">
+                                            <span>Second hidden subsubitem</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="m-collapsible-list"&gt;
+  &lt;li class="m-collapsible-list__item"&gt;
+    &lt;a href="#"&gt;
+      &lt;span&gt;First item&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="m-collapsible-list__item"&gt;
+    &lt;a href="#"&gt;
+      &lt;span class="fa fa-fw fa-angle-down"&gt;&lt;/span&gt;
+      &lt;span&gt;Second collapsible item&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li class="m-collapsible-list__item"&gt;
+        &lt;a href="#"&gt;
+          &lt;span class="fa fa-fw fa-angle-down"&gt;&lt;/span&gt;
+          &lt;span&gt;First collapsible subitem&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li class="m-collapsible-list__item is-active"&gt;
+            &lt;a href="#"&gt;
+              &lt;span&gt;First active subsubitem&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li class="m-collapsible-list__item"&gt;
+        &lt;a href="#"&gt;
+          &lt;span class="fa fa-fw fa-angle-right"&gt;&lt;/span&gt;
+          &lt;span&gt;Second collapsed subitem&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;ul class="is-collapsed"&gt;
+          &lt;li class="m-collapsible-list__item"&gt;
+            &lt;a href="#"&gt;
+              &lt;span&gt;Second hidden subsubitem&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+
         <a name="molecules-contact"></a>
         <h3 class="d-h3">Contact</h3>
         <span class="d-file">molecules/molecules.contact</span>
@@ -1073,7 +1165,24 @@
 &lt;/div&gt;</code></pre>
             </div>
         </div>
-        
+        <div class="d">
+            <div>
+                <div class="m-alert d-alert u-margin-bottom">
+                    <p>Sometimes you might want to programmatically open the flyout above your clicked element (e.g. when you're at the end of the page and there is no free space below enough). To fix the dropshadow when doing this, add the <code>.opens-above</code> class to your flyout.</p>
+                </div>
+                <div class="m-flyout m-flyout--md is-open opens-above d-flyout--opens-above">
+                  <div class="m-flyout__content has-padding">
+                    <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="m-flyout is-open opens-above"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
         <a name="molecules-gallery"></a>
         <h3 class="d-h3">Gallery</h3>
         <span class="d-file">molecules/molecules.gallery</span>
@@ -1449,8 +1558,7 @@
                     <li class="is-active"><a href="javascript:void(0);">Albert Einstein</a></li>
                 </ul>
 
-
-                <ul class="m-nav-list m-nav-list--left d-nav-list">
+                <ul class="m-nav-list m-nav-list--left">
                     <li><a href="javascript:void(0);"><span class="fa fa-lightbulb-o"></span>Thomas Edison</a></li>
                     <li><a href="javascript:void(0);">Leonardo da Vinci <span class="a-badge">67</span></a></li>
                     <li class="is-active"><a href="javascript:void(0);">Albert Einstein</a></li>
@@ -1466,6 +1574,46 @@
   &lt;li&gt;&lt;a href="#"&gt;&lt;span class="fa fa-lightbulb-o"&gt;&lt;/span&gt;Thomas Edison&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li class="is-active"&gt;&lt;a href="#"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-alert u-margin-bottom d-alert">
+                    <p>In order to maintain correct semantics, you also can use buttons inside a `nav-list`. Use this option when working with click events, instead of linking to another page.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="u-margin-bottom">
+            <p>In order to maintain correct semantics, you also can use buttons inside a `nav-list`. Use this option when working with click events, instead of linking to another page.</p>
+            <p>Note that there is a possibility of using an <code>m-nav-list</code> class on a <code>button</code> in the <b>list navigation</b>.  The behavour is the same as an <code>m-nav-list</code> class on the <code>a-tag</code> with an <code>href</code>, but triggered on the <code>onClick</code> event.  So use the <code>a-tag</code> for a link and the <code>button-tag</code> for an event.</p>
+        </div> -->
+
+        <div class="d">
+            <div>
+                <ul class="m-nav-list d-nav-list">
+                    <li><button><span class="fa fa-lightbulb-o"></span>Thomas Edison</button></li>
+                    <li><button>Leonardo da Vinci <span class="a-badge">67</span></button></li>
+                    <li class="is-active"><button>Albert Einstein</button></li>
+                </ul>
+
+                <ul class="m-nav-list m-nav-list--left d-nav-list">
+                    <li><button><span class="fa fa-lightbulb-o"></span>Thomas Edison</button></li>
+                    <li><button>Leonardo da Vinci <span class="a-badge">67</span></button></li>
+                    <li class="is-active"><button>Albert Einstein</button></li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="m-nav-list"&gt;
+  &lt;li&gt;&lt;button&gt;&lt;span class="fa fa-lightbulb-o"&gt;&lt;/span&gt;Thomas Edison&lt;/button&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;button&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
+  &lt;li class="is-active"&gt;&lt;button&gt;Albert Einstein&lt;/button&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="m-nav-list m-nav-list--left"&gt;
+  &lt;li&gt;&lt;button&gt;&lt;span class="fa fa-lightbulb-o"&gt;&lt;/span&gt;Thomas Edison&lt;/button&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;button&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
+  &lt;li class="is-active"&gt;&lt;button&gt;Albert Einstein&lt;/button&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
         </div>

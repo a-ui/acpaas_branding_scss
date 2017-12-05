@@ -8,6 +8,7 @@
 @import 'quarks';
 
 
+
 /**
  * CUSTOM STYLING FOR STYLEGUIDE
  * -------------------------------------------------------------------
@@ -227,6 +228,10 @@ footer {
   &--no-padding {
     margin-bottom: 3rem;
   }
+
+  &--opens-above {
+    margin-bottom: 6rem;
+  }
 }
 
 .d-icon-list {
@@ -279,7 +284,15 @@ footer {
 }
 
 @keyframes rainbow {
-  0%{background-position:0% 0%}
-  50%{background-position:46.25% 0%}
-  100%{background-position:92.5% 0%}
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 46.25% 0%;
+  }
+
+  100% {
+    background-position: 92.5% 0%;
+  }
 }
