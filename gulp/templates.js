@@ -60,7 +60,7 @@ function getTemplateData(){
         }
     );
 
-    listSelectors(['node_modules/@a-ui/core/dist/assets/styles/utilities/_utilities.typography.scss'],
+    listSelectors(['node_modules/@a-ui/core/dist/assets/styles/utilities/_utilities.text.scss'],
         { include: ['classes'] },
         function(textUtilities) {
             for(var txtU in textUtilities['classes']) {

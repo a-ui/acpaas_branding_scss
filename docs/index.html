@@ -67,7 +67,7 @@
     <main>
         <div class="u-wrapper d-h1">
             <div class="u-container">
-                <h1>ACPaaS Branding Styleguide <small>v1.0.0-beta-1</small></h1>
+                <h1>ACPaaS Branding Styleguide <small>v1.1.0</small></h1>
             </div>
         </div>
 
@@ -126,7 +126,7 @@
                 <p>Responsive mixins</p>
                 <div class="m-alert d-alert">
                     <p>Note that working mobile first is encouraged, so try to limit the use of the <code>to</code> mixin.</p>
-                </div>
+                </div> 
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>.css {
@@ -446,11 +446,11 @@
 
 
         <a name="quarks-variables"></a>
-        <h3 class="d-h3">Variable overrides</h3>
+        <h3 class="d-h3">Variables</h3>
         <span class="d-file">quarks/quarks.variables</span>
         <div class="d">
             <div>
-                <p>An overview of all variable overrides and their default values.</p>
+                <p>An overview of all variables and their default values. If you are using Sass, you can overwrite these values for creating your own flavor of the branding kit.</p>
                 <ul class="a-list--unstyled d-list d-list__variables">
                     
                         <li class="d-font-family-base">
@@ -512,6 +512,19 @@
 </div>
 <div class="u-wrapper">
     <div class="u-container">
+        <a name="base-antwerpen-icons"></a>
+        <h3 class="d-h3">Antwerpen icons</h3>
+        <span class="d-file">base/base.antwerpen-icons</span>
+        <div class="d">
+            <div>
+                <ul class="a-list--unstyled d-list d-list__antwerpen-icons">
+                    
+                </ul>
+            </div>
+        </div>
+
+
+
         <a name="base-layout"></a>
         <h3 class="d-h3">Layout</h3>
         <span class="d-file">base/base.layout</span>
@@ -589,6 +602,21 @@
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="h6"&gt;Heading 6&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-alert d-alert">
+                    In some cases, it might be necessary to use the base font as font family for the headings. In that case, add the class <code>has-base-font</code> to your heading.
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;h1 class="has-base-font"&gt;Heading 1&lt;/h1&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;h2 class="has-base-font"&gt;Heading 2&lt;/h2&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;h3 class="has-base-font"&gt;Heading 3&lt;/h3&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;h4 class="has-base-font"&gt;Heading 4&lt;/h4&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;h5 class="has-base-font"&gt;Heading 5&lt;/h5&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;h6 class="has-base-font"&gt;Heading 6&lt;/h6&gt;</code></pre>
             </div>
         </div>
         <div class="d">
@@ -2286,13 +2314,13 @@
         <div class="d">
             <div>
                 <div class="a-input a-input--inline">
-                    <label class="a-input__label a-input__label--inline" for="inline-text-field">Inline text field <label>
+                    <label class="a-input__label a-input__label--inline" for="inline-text-field">Inline text field</label>
                     <input type="text" name="inline-text-field" id="inline-text-field" placeholder="Placeholder" />
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input a-input--inline"&gt;
-  &lt;label class="a-input__label a-input__label--inline" for="inline-text-field"&gt;Inline text field &lt;label&gt;
+  &lt;label class="a-input__label a-input__label--inline" for="inline-text-field"&gt;Inline text field&lt;/label&gt;
   &lt;input type="text" name="inline-text-field" id="inline-text-field" placeholder="Placeholder" /&gt;
 &lt;/div&gt;</code></pre>
             </div>
@@ -2433,6 +2461,138 @@
 &lt;/div&gt;</code></pre>
             </div>
         </div>
+        <div class="d">
+            <div>
+                <div class="a-input has-icon-right a-input--inline">
+                    <label class="a-input__label a-input__label--inline" for="input-select">Inline select with options</label>
+                    <div class="a-input__wrapper a-input__wrapper--inline">
+                        <select name="input-select" id="input-select">
+                            <option disabled selected>Make your choice...</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4" disabled>Option 4 disabled</option>
+                            <option value="5">Option 5</option>
+                        </select>
+                        <span class="fa fa-angle-down"></span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input has-icon-right a-input--inline"&gt;
+  &lt;label class="a-input__label a-input__label--inline" for="inline-text-field"&gt;Inline select input&lt;/label&gt;
+  &lt;div class="a-input__wrapper a-input__wrapper--inline"&gt;
+    &lt;select name="input-select" id="input-select"&gt;
+      &lt;option disabled selected&gt;Make your choice...&lt;/option&gt;
+      &lt;option value="1"&gt;Option 1&lt;/option&gt;
+      &lt;option value="2"&gt;Option 2&lt;/option&gt;
+      &lt;option value="3"&gt;Option 3&lt;/option&gt;
+      &lt;option value="4" disabled&gt;Option 4 disabled&lt;/option&gt;
+      &lt;option value="5"&gt;Option 5&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;span class="fa fa-angle-down"&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+
+
+
+        <h4 class="d-h4">Input field sizes</h4>
+        <div class="d">
+            <div>
+                <div class="a-input a-input--small u-margin-bottom">
+                    <label class="a-input__label" for="text-field">Small text field</label>
+                    <input type="text" name="text-field" id="text-field" placeholder="Placeholder" />
+                </div>
+                <div class="a-input a-input--small has-icon-right u-margin-bottom">
+                    <label class="a-input__label" for="input-select">Small select with options</label>
+                    <div class="a-input__wrapper">
+                        <select name="input-select" id="input-select">
+                            <option disabled selected>Make your choice...</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4" disabled>Option 4 disabled</option>
+                            <option value="5">Option 5</option>
+                        </select>
+                        <span class="fa fa-angle-down"></span>
+                    </div>
+                </div>
+                <div class="a-input a-input--small">
+                    <label class="a-input__label" for="input-textarea">Small text area</label>
+                    <textarea name="input-textarea" id="input-textarea" placeholder="Placeholder"></textarea>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input a-input--small"&gt;
+  &lt;label class="a-input__label" for="text-field"&gt;Text field&lt;/label&gt;
+  &lt;input type="text" name="text-field" id="text-field" placeholder="Placeholder" /&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input a-input--small has-icon-right"&gt;
+  &lt;label class="a-input__label" for="input-select"&gt;Select with options&lt;/label&gt;
+  &lt;div class="a-input__wrapper"&gt;
+    &lt;select name="input-select" id="input-select"&gt;
+      ...
+    &lt;/select&gt;
+    &lt;span class="fa fa-angle-down"&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input a-input--small"&gt;
+  &lt;label class="a-input__label" for="input-textarea"&gt;Text area&lt;/label&gt;
+  &lt;textarea name="input-textarea" id="input-textarea" placeholder="Placeholder"&gt;&lt;/textarea&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-input a-input--large u-margin-bottom">
+                    <label class="a-input__label" for="text-field">Large text field</label>
+                    <input type="text" name="text-field" id="text-field" placeholder="Placeholder" />
+                </div>
+                <div class="a-input a-input--large has-icon-right u-margin-bottom">
+                    <label class="a-input__label" for="input-select">Large select with options</label>
+                    <div class="a-input__wrapper">
+                        <select name="input-select" id="input-select">
+                            <option disabled selected>Make your choice...</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4" disabled>Option 4 disabled</option>
+                            <option value="5">Option 5</option>
+                        </select>
+                        <span class="fa fa-angle-down"></span>
+                    </div>
+                </div>
+                <div class="a-input a-input--large">
+                    <label class="a-input__label" for="input-textarea">Large text area</label>
+                    <textarea name="input-textarea" id="input-textarea" placeholder="Placeholder"></textarea>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input a-input--large"&gt;
+  &lt;label class="a-input__label" for="text-field"&gt;Text field&lt;/label&gt;
+  &lt;input type="text" name="text-field" id="text-field" placeholder="Placeholder" /&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input a-input--large has-icon-right"&gt;
+  &lt;label class="a-input__label" for="input-select"&gt;Select with options&lt;/label&gt;
+  &lt;div class="a-input__wrapper"&gt;
+    &lt;select name="input-select" id="input-select"&gt;
+      ...
+    &lt;/select&gt;
+    &lt;span class="fa fa-angle-down"&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input a-input--large"&gt;
+  &lt;label class="a-input__label" for="input-textarea"&gt;Text area&lt;/label&gt;
+  &lt;textarea name="input-textarea" id="input-textarea" placeholder="Placeholder"&gt;&lt;/textarea&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+
+
 
         <h4 class="d-h4">Input icons and addons</h4>
         <div class="d">
@@ -2555,20 +2715,18 @@
         </div>
         <div class="d">
             <div>
-                <div class="a-input has-icon-right has-error">
+                <div class="a-input has-error">
                     <label class="a-input__label" for="text-field-error">Error text field</label>
                     <div class="a-input__wrapper">
                         <input type="text" name="text-field-error" id="text-field-error" placeholder="Placeholder" />
-                        <span class="fa fa-eye"></span>
                     </div>
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input has-icon-right has-error"&gt;
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input has-error"&gt;
   &lt;label class="a-input__label" for="text-field-error"&gt;Error text field&lt;/label&gt;
   &lt;div class="a-input__wrapper"&gt;
     &lt;input type="text" name="text-field-error" id="text-field-error" placeholder="Placeholder" /&gt;
-    &lt;span class="fa fa-eye"&gt;&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
@@ -3019,6 +3177,25 @@
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-spinner"&gt;&lt;/div&gt;</code></pre>
             </div>
         </div>
+        <div class="d">
+            <div>
+                <div class="a-spinner a-spinner--sm"></div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-spinner a-spinner--sm"&gt;&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-spinner a-spinner--lg"></div>
+                <div class="m-alert d-alert">
+                    <p>Note that the large spinner can be used only once per page and only for indicating that the complete page is loading.</p>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-spinner a-spinner--lg"&gt;&lt;/div&gt;</code></pre>
+            </div>
+        </div>
 
         <a name="atoms-switch"></a>
         <h3 class="d-h3">Switch</h3>
@@ -3338,6 +3515,112 @@
             </div>
         </div>
 
+        <h4 class="d-h4">Table cell options</h4>
+        <div class="d">
+            <div>
+                <table class="a-table">
+                    <thead>
+                        <tr>
+                            <th class="is-condensed">Condensed table cells</th>
+                            <th class="is-condensed">Publius Vergilius Maro</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="is-condensed">Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
+                            <td class="is-condensed">Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
+                        </tr>
+                        <tr>
+                            <td class="is-condensed">Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
+                            <td class="is-condensed">Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
+                        </tr>
+                        <tr>
+                            <td class="is-condensed">Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
+                            <td class="is-condensed">Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-table__wrapper-responsive"&gt;
+  &lt;table class="a-table"&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th class="is-condensed"&gt;Condensed table cells&lt;/th&gt;
+        &lt;th class="is-condensed"&gt;...&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class="is-condensed"&gt;...&lt;/td&gt;
+        &lt;td class="is-condensed"&gt;...&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="is-condensed"&gt;...&lt;/td&gt;
+        &lt;td class="is-condensed"&gt;...&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="is-condensed"&gt;...&lt;/td&gt;
+        &lt;td class="is-condensed"&gt;...&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <table class="a-table">
+                    <thead>
+                        <tr>
+                            <th class="has-no-padding">Table cells without padding</th>
+                            <th class="has-no-padding">Publius Vergilius Maro</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="has-no-padding">Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
+                            <td class="has-no-padding">Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
+                        </tr>
+                        <tr>
+                            <td class="has-no-padding">Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
+                            <td class="has-no-padding">Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
+                        </tr>
+                        <tr>
+                            <td class="has-no-padding">Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
+                            <td class="has-no-padding">Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-table__wrapper-responsive"&gt;
+  &lt;table class="a-table"&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th class="has-no-padding"&gt;Table cells without padding&lt;/th&gt;
+        &lt;th class="has-no-padding"&gt;...&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
+        &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
+        &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
+        &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
         <h4 class="d-h4">Responsive wrapper for tables</h4>
         <div class="d">
             <div>
@@ -3371,8 +3654,8 @@
   &lt;table class="a-table"&gt;
     &lt;thead&gt;
       &lt;tr&gt;
-        &lt;th&gt;Publius Vergilius Maro&lt;/th&gt;
-        &lt;th&gt;Aeneis&lt;/th&gt;
+        &lt;th&gt;Responsive table&lt;/th&gt;
+        &lt;th&gt;...&lt;/th&gt;
       &lt;/tr&gt;
     &lt;/thead&gt;
     &lt;tbody&gt;
@@ -4126,6 +4409,98 @@
             </div>
         </div>
 
+        <a name="molecules-collapsible-list"></a>
+        <h3 class="d-h3">Collapsible list</h3>
+        <span class="d-file">molecules/molecules.collapsible-list</span>
+        <div class="d">
+            <div>
+                <ul class="m-collapsible-list">
+                    <li class="m-collapsible-list__item">
+                        <a href="void(0);">
+                            <span>First item</span>
+                        </a>
+                    </li>
+                    <li class="m-collapsible-list__item">
+                        <a href="void(0);">
+                            <span class="fa fa-fw fa-angle-down"></span>
+                            <span>Second collapsible item</span>
+                        </a>
+                        <ul>
+                            <li class="m-collapsible-list__item">
+                                <a href="void(0);">
+                                    <span class="fa fa-fw fa-angle-down"></span>
+                                    <span>First collapsible subitem</span>
+                                </a>
+                                <ul>
+                                    <li class="m-collapsible-list__item is-active">
+                                        <a href="void(0);">
+                                            <span>First active subsubitem</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="m-collapsible-list__item">
+                                <a href="void(0);">
+                                    <span class="fa fa-fw fa-angle-right"></span>
+                                    <span>Second collapsed subitem</span>
+                                </a>
+                                <ul class="is-collapsed">
+                                    <li class="m-collapsible-list__item">
+                                        <a href="void(0);">
+                                            <span>Second hidden subsubitem</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="m-collapsible-list"&gt;
+  &lt;li class="m-collapsible-list__item"&gt;
+    &lt;a href="#"&gt;
+      &lt;span&gt;First item&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="m-collapsible-list__item"&gt;
+    &lt;a href="#"&gt;
+      &lt;span class="fa fa-fw fa-angle-down"&gt;&lt;/span&gt;
+      &lt;span&gt;Second collapsible item&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li class="m-collapsible-list__item"&gt;
+        &lt;a href="#"&gt;
+          &lt;span class="fa fa-fw fa-angle-down"&gt;&lt;/span&gt;
+          &lt;span&gt;First collapsible subitem&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li class="m-collapsible-list__item is-active"&gt;
+            &lt;a href="#"&gt;
+              &lt;span&gt;First active subsubitem&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li class="m-collapsible-list__item"&gt;
+        &lt;a href="#"&gt;
+          &lt;span class="fa fa-fw fa-angle-right"&gt;&lt;/span&gt;
+          &lt;span&gt;Second collapsed subitem&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;ul class="is-collapsed"&gt;
+          &lt;li class="m-collapsible-list__item"&gt;
+            &lt;a href="#"&gt;
+              &lt;span&gt;Second hidden subsubitem&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+
         <a name="molecules-contact"></a>
         <h3 class="d-h3">Contact</h3>
         <span class="d-file">molecules/molecules.contact</span>
@@ -4801,7 +5176,24 @@
 &lt;/div&gt;</code></pre>
             </div>
         </div>
-        
+        <div class="d">
+            <div>
+                <div class="m-alert d-alert u-margin-bottom">
+                    <p>Sometimes you might want to programmatically open the flyout above your clicked element (e.g. when you're at the end of the page and there is no free space below enough). To fix the dropshadow when doing this, add the <code>.opens-above</code> class to your flyout.</p>
+                </div>
+                <div class="m-flyout m-flyout--md is-open opens-above d-flyout--opens-above">
+                  <div class="m-flyout__content has-padding">
+                    <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="m-flyout is-open opens-above"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
         <a name="molecules-gallery"></a>
         <h3 class="d-h3">Gallery</h3>
         <span class="d-file">molecules/molecules.gallery</span>
@@ -5177,8 +5569,7 @@
                     <li class="is-active"><a href="javascript:void(0);">Albert Einstein</a></li>
                 </ul>
 
-
-                <ul class="m-nav-list m-nav-list--left d-nav-list">
+                <ul class="m-nav-list m-nav-list--left">
                     <li><a href="javascript:void(0);"><span class="fa fa-lightbulb-o"></span>Thomas Edison</a></li>
                     <li><a href="javascript:void(0);">Leonardo da Vinci <span class="a-badge">67</span></a></li>
                     <li class="is-active"><a href="javascript:void(0);">Albert Einstein</a></li>
@@ -5194,6 +5585,46 @@
   &lt;li&gt;&lt;a href="#"&gt;&lt;span class="fa fa-lightbulb-o"&gt;&lt;/span&gt;Thomas Edison&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li class="is-active"&gt;&lt;a href="#"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-alert u-margin-bottom d-alert">
+                    <p>In order to maintain correct semantics, you also can use buttons inside a `nav-list`. Use this option when working with click events, instead of linking to another page.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="u-margin-bottom">
+            <p>In order to maintain correct semantics, you also can use buttons inside a `nav-list`. Use this option when working with click events, instead of linking to another page.</p>
+            <p>Note that there is a possibility of using an <code>m-nav-list</code> class on a <code>button</code> in the <b>list navigation</b>.  The behavour is the same as an <code>m-nav-list</code> class on the <code>a-tag</code> with an <code>href</code>, but triggered on the <code>onClick</code> event.  So use the <code>a-tag</code> for a link and the <code>button-tag</code> for an event.</p>
+        </div> -->
+
+        <div class="d">
+            <div>
+                <ul class="m-nav-list d-nav-list">
+                    <li><button><span class="fa fa-lightbulb-o"></span>Thomas Edison</button></li>
+                    <li><button>Leonardo da Vinci <span class="a-badge">67</span></button></li>
+                    <li class="is-active"><button>Albert Einstein</button></li>
+                </ul>
+
+                <ul class="m-nav-list m-nav-list--left d-nav-list">
+                    <li><button><span class="fa fa-lightbulb-o"></span>Thomas Edison</button></li>
+                    <li><button>Leonardo da Vinci <span class="a-badge">67</span></button></li>
+                    <li class="is-active"><button>Albert Einstein</button></li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="m-nav-list"&gt;
+  &lt;li&gt;&lt;button&gt;&lt;span class="fa fa-lightbulb-o"&gt;&lt;/span&gt;Thomas Edison&lt;/button&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;button&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
+  &lt;li class="is-active"&gt;&lt;button&gt;Albert Einstein&lt;/button&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="m-nav-list m-nav-list--left"&gt;
+  &lt;li&gt;&lt;button&gt;&lt;span class="fa fa-lightbulb-o"&gt;&lt;/span&gt;Thomas Edison&lt;/button&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;button&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
+  &lt;li class="is-active"&gt;&lt;button&gt;Albert Einstein&lt;/button&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
         </div>
