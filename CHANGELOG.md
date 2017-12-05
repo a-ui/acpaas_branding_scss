@@ -7,6 +7,9 @@
 ### Changed
 - Updated to Core Branding v1.3.0
 
+### Fixed
+- Fixed small errors in the styleguide
+
 
 ## [1.0.3] - 2017-08-28
 ### Added

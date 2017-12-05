@@ -1,8 +1,8 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css");
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Slabo+27px|Roboto+Mono");
-
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Slabo+27px|Roboto+Mono");
 
 /**
  * CORE BRANDING STYLES
@@ -444,6 +444,16 @@
  */
 
 /**
+ * FONT AWESOME
+ * -------------------------------------------------------------------
+ */
+
+/**
+ * GOOGLE FONTS
+ * -------------------------------------------------------------------
+ */
+
+/**
  * BASE
  * -------------------------------------------------------------------
  */
@@ -722,21 +732,6 @@
 .icon-yammer:before {
 	content: '\EA33';
 }
-
-/**
- * FONTS
- * -------------------------------------------------------------------
- */
-
-/**
- * GOOGLE FONTS
- * -------------------------------------------------------------------
- */
-
-/**
- * FONT AWESOME
- * -------------------------------------------------------------------
- */
 
 /**
  * LAYOUT
