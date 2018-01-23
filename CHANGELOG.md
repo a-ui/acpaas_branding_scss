@@ -3,6 +3,11 @@
 ## Unreleased
 
 
+## [2.0.0] - 2018-01-19
+### Changed
+- [BREAKING] Updated to Core Branding v2.0.0
+
+
 ## [1.1.0] - 2017-12-05
 ### Changed
 - Updated to Core Branding v1.3.0
@@ -30,6 +35,7 @@
 - Initial release.
 
 
+[2.0.0]: https://github.com/a-ui/acpaas_branding_scss/tree/v2.0.0
 [1.1.0]: https://github.com/a-ui/acpaas_branding_scss/tree/v1.1.0
 [1.0.3]: https://github.com/a-ui/acpaas_branding_scss/tree/v1.0.3
 [1.0.2]: https://github.com/a-ui/acpaas_branding_scss/tree/v1.0.2
