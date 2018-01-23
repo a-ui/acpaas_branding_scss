@@ -5071,6 +5071,7 @@ dl {
 	position: relative;
 	text-align: center;
 	width: 3rem;
+	z-index: 1;
 }
 
 .m-pagination > li > a {
@@ -5113,7 +5114,7 @@ dl {
 
 .m-pagination .m-pagination__next {
 	border-left: 1px solid #0086b3;
-	z-index: -1;
+	z-index: 0;
 }
 
 .m-pagination--outline > li {
@@ -5128,7 +5129,6 @@ dl {
 	background-color: inherit;
 	box-shadow: inherit;
 	color: inherit;
-	cursor: inherit;
 }
 
 .m-pagination--outline > li > a.is-active,
