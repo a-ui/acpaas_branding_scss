@@ -5,7 +5,7 @@
 
 ## [2.0.0] - 2018-01-19
 ### Changed
-- [BREAKING] Updated to Core Branding v2.0.0
+- [BREAKING] Updated to Core Branding v2
 
 
 ## [1.1.0] - 2017-12-05
