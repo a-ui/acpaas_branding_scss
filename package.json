@@ -1,7 +1,7 @@
 {
   "name": "@a-ui/acpaas",
-  "version": "2.0.0",
-  "description": "",
+  "version": "2.1.0",
+  "description": "acpaas_branding_scss",
   "repository": {
     "type": "git",
     "url": "https://github.com/a-ui/acpaas_branding_scss.git"
@@ -9,7 +9,8 @@
   "scripts": {
     "prepublish": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp build"
+    "build": "gulp build",
+    "start": "gulp server"
   },
   "contributors": [
     {

@@ -159,6 +159,13 @@
  */
 
 /**
+ * $screen-xl =
+ *    max-width of u-container
+ *    + width of official logo * 2
+ *    + space between logo and u-container * 2
+ */
+
+/**
  * FONT FAMILIES
  * -------------------------------------------------------------------
  */
@@ -194,7 +201,7 @@
  * http://www.sitepoint.com/better-solution-managing-z-index-sass/
  *
  * Use like this:
- *   z-index: layer("overlay");
+ *   z-index: layer('overlay');
  *     where overlay is a list item of the default list "$z-indexes" (see below)
  *
  * The list is also upgradeable in that nesting is permitted, e.g.:
