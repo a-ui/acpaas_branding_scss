@@ -24,7 +24,13 @@ var license = require('gulp-header-license');
 var fs = require('fs');
 
 var cssNano = [
-    cssnano()
+    cssnano({
+        discardComments: {
+            removeAllButFirst: true
+        },
+        discardUnused: false
+    })
+
 ];
 
 var autoPrefixer = [
@@ -66,15 +72,16 @@ gulp.task('sass-dist', function(){
         .pipe(sass(sassOptions).on('error', sass.logError))
         .pipe(mergeMediaQueries({ use_external: false }))
         .pipe(postcss(autoPrefixer))
+        .pipe(license('/*\n' + fs.readFileSync('LICENSE.md', 'utf8') + '*/'))
         .pipe(cssUrlAdjuster({
-            replace:  ['../../fonts','assets/fonts'],
+            replace:  ['../../fonts', 'assets/fonts'],
         }))
         .pipe(gulp.dest('dist'))
         .pipe(sourcemaps.init())
-        .pipe(postcss(cssNano))
-        .pipe(license('/*\n' + fs.readFileSync('LICENSE.md', 'utf8') + '*/'))
         .pipe(gulp.dest('./dist/'))
         .pipe(rename({extname: '.min.css'}))
+        .pipe(postcss(cssNano))
+        .pipe(license('/*\n' + fs.readFileSync('LICENSE.md', 'utf8') + '*/'))
         .pipe(sourcemaps.write("./", sourcemapOptions))
         .pipe(gulp.dest('dist'));
 });

@@ -1,11 +1,16 @@
 # Changelog
 
 ## Unreleased
+### Changed
+- Updated to Core Branding v2.3.0
+
+### Removed
+- Removed all Antwerp references, both in code and documentation
 
 
 ## [2.0.0] - 2018-01-19
 ### Changed
-- [BREAKING] Updated to Core Branding v2
+- [BREAKING] Updated to Core Branding v2.0.0
 
 
 ## [1.1.0] - 2017-12-05

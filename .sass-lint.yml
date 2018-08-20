@@ -64,7 +64,9 @@ rules:
     -
       allow-leading-underscore: true
       convention: hyphenatedbem
-  mixins-before-declarations: 1
+  mixins-before-declarations:
+    - 1
+    - exclude: ['at', 'to']
   nesting-depth:
     - 1
     -
