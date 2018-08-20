@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## [2.1.0] - 2018-08-20
 ### Changed
 - Updated to Core Branding v2.3.0
 
@@ -40,6 +40,7 @@
 - Initial release.
 
 
+[2.1.0]: https://github.com/a-ui/acpaas_branding_scss/tree/v2.1.0
 [2.0.0]: https://github.com/a-ui/acpaas_branding_scss/tree/v2.0.0
 [1.1.0]: https://github.com/a-ui/acpaas_branding_scss/tree/v1.1.0
 [1.0.3]: https://github.com/a-ui/acpaas_branding_scss/tree/v1.0.3
