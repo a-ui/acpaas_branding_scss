@@ -36,6 +36,18 @@ Go to the root of this project and run the following command in your command lin
 npm install
 ```
 
+Then, you can import everything in your Sass setup (`main.min.css` also available):
+
+```
+@import '@a-ui/acpaas/dist/main.css';
+```
+
+In order to extend our style kit you can make use of our Sass variables. Import them like this:
+
+```
+@import '@a-ui/acpaas/dist/assets/styles/_quarks.scss';
+```
+
 ### Local development
 
 Run the following command in your command line:
