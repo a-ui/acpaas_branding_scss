@@ -61,8 +61,8 @@
     <meta name="format-detection" content="telephone=no" />
 
 </head>
-<body class="has-header">
-    <header class="o-header o-header--fixed"></header>
+<body>
+    <header class="o-header"></header>
 
     <main>
         <div class="u-wrapper d-h1">
@@ -70,6 +70,8 @@
                 <h1>ACPaaS Branding Styleguide <small>v{{ VERSION_INFO.version }}</small></h1>
             </div>
         </div>
+
+        {% include "templates/intro.njk" %}
 
         {% include "templates/quarks.njk" %}
 
