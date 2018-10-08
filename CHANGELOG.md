@@ -2,7 +2,7 @@
 
 ## [3.0.0] - 2018-10-08
 ### Changed
-- [BREAKING] Added AUI-kit as part of the core branding
+- [BREAKING] Added AUI-kit as part of the ACPaaS branding
 
 
 ## [2.1.0] - 2018-08-20
