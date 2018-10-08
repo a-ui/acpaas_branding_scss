@@ -5828,6 +5828,757 @@ dl {
 	margin-right: 0.75rem;
 }
 
+/**
+ * AUI styling for dynamic components
+ * -------------------------------------------------------------------
+ */
+
+/**
+ * AUI ANIMATION
+ * -------------------------------------------------------------------
+ */
+
+/**
+ * AUI COOKIE CONSENT
+ * -------------------------------------------------------------------
+ */
+
+.cc-banner {
+	background: #009ed2;
+	bottom: 0;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	left: 0;
+	position: fixed;
+	right: 0;
+	z-index: 10;
+}
+
+.cc-banner p,
+.cc-banner .cc-compliance {
+	width: 100%;
+}
+
+.cc-banner p {
+	color: white;
+	-ms-flex: 1;
+	    flex: 1;
+	margin: 0;
+	padding: 0.75rem 1.5rem;
+}
+
+.cc-banner p a {
+	color: white;
+	opacity: .8;
+}
+
+.cc-banner p a:hover,
+.cc-banner p a:active,
+.cc-banner p a:visited {
+	opacity: 1;
+}
+
+.cc-banner .cc-compliance {
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.cc-banner .button {
+	background: #0091d3;
+	margin: 0;
+	min-width: 9rem;
+}
+
+.cc-banner .button:hover,
+.cc-banner .button:active,
+.cc-banner .button:visited {
+	background: palette(#009ed2, "dark");
+}
+
+/**
+ * AUI HEADER
+ * -------------------------------------------------------------------
+ */
+
+.o-header {
+	transition: transform 250ms ease-in-out;
+	will-change: transform;
+}
+
+.o-header.header--pinned {
+	top: 0;
+}
+
+.o-header.header--unpinned {
+	-ms-transform: translateY(-100%);
+	    transform: translateY(-100%);
+}
+
+.o-header.has-logo.header--unpinned {
+	-ms-transform: translateY(-300%);
+	    transform: translateY(-300%);
+}
+
+.o-header__content-wrapper {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	height: 100%;
+	-ms-flex-pack: end;
+	    justify-content: flex-end;
+}
+
+.o-header__content {
+	-ms-flex: 1;
+	    flex: 1;
+	height: 100%;
+}
+
+.o-header__menu-items {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: end;
+	    justify-content: flex-end;
+}
+
+/**
+ * AUI HERO
+ * -------------------------------------------------------------------
+ */
+
+.o-hero {
+	-ms-flex-align: center;
+	    align-items: center;
+	background: #d8d8d8;
+	display: -ms-flexbox;
+	display: flex;
+	height: 12rem;
+}
+
+.o-hero__card {
+	-ms-flex: 1 1 auto;
+	    flex: 1 1 auto;
+	padding-left: 3rem;
+}
+
+.o-hero__cta {
+	padding-right: 3rem;
+}
+
+/**
+ * AUI ITEM COUNTER
+ * -------------------------------------------------------------------
+ */
+
+.m-items-per-page .a-input .a-input__wrapper {
+	display: inline-block;
+	margin-right: 0.75rem;
+}
+
+/**
+ * AUI LEAFLET
+ * -------------------------------------------------------------------
+ */
+
+.o-leaflet {
+	border: 1px solid #b0b0b0;
+	display: -ms-flexbox;
+	display: flex;
+	height: 600px;
+	width: 100%;
+}
+
+.o-leaflet__wrapper {
+	-ms-flex: 1;
+	    flex: 1;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.o-leaflet__map {
+	font-family: inherit;
+	font-size: inherit;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.o-leaflet__content {
+	background-color: white;
+	overflow: auto;
+	width: 0;
+}
+
+.o-leaflet__content.has-content {
+	border-right: solid 1px #b0b0b0;
+	padding: 1.125rem;
+	width: 300px;
+}
+
+.o-leaflet__controls {
+	position: absolute;
+	z-index: 2;
+}
+
+.o-leaflet__controls--bottom-left {
+	bottom: 1.125rem;
+	left: 1.125rem;
+}
+
+.o-leaflet__controls--bottom-right {
+	bottom: 1.125rem;
+	right: 1.125rem;
+}
+
+.o-leaflet__controls--top-left {
+	left: 1.125rem;
+	top: 1.125rem;
+}
+
+.o-leaflet__controls--top-right {
+	right: 1.125rem;
+	top: 1.125rem;
+}
+
+.o-leaflet__controls--top-left .o-leaflet__control,
+.o-leaflet__controls--top-right .o-leaflet__control {
+	margin-bottom: 0.375rem;
+}
+
+.o-leaflet__controls--bottom-left .o-leaflet__control,
+.o-leaflet__controls--bottom-right .o-leaflet__control {
+	margin-top: 0.375rem;
+}
+
+.o-leaflet__controls--bottom-left .o-leaflet__control,
+.o-leaflet__controls--top-left .o-leaflet__control {
+	margin-right: 0.375rem;
+}
+
+.o-leaflet__controls--bottom-right .o-leaflet__control,
+.o-leaflet__controls--top-right .o-leaflet__control {
+	margin-left: 0.375rem;
+}
+
+.o-leaflet__control {
+	float: left;
+}
+
+.o-leaflet__zoom-control {
+	display: block;
+}
+
+.o-leaflet__html-icon {
+	background-color: transparent;
+	border: none;
+}
+
+.o-leaflet.is-full-screen {
+	border: none;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 10;
+}
+
+.o-leaflet.is-full-screen .o-leaflet__content {
+	border: solid 1px #b0b0b0;
+	box-shadow: 0.75rem 0.75rem 0 rgba(0, 0, 0, 0.1);
+	left: 1.125rem;
+	max-height: calc(100% - 160px);
+	position: absolute;
+	top: 1.125rem;
+	width: 350px;
+	z-index: 2;
+}
+
+.o-leaflet.is-full-screen .o-leaflet__controls--top-left {
+	left: calc(350px + 2 * $spacer-xs);
+}
+
+/**
+ * LEAFLET OVERRIDES
+ */
+
+.leaflet-popup-content-wrapper {
+	border: 1px solid #f3f3f3 !important;
+	border-radius: 0 !important;
+	box-shadow: 0.75rem 0.75rem 0 rgba(0, 0, 0, 0.1) !important;
+	position: relative;
+}
+
+.leaflet-popup-content-wrapper:after {
+	background-color: white;
+	bottom: -1px;
+	content: '';
+	height: 1px;
+	left: 50%;
+	position: absolute;
+	-ms-transform: translateX(-50%);
+	    transform: translateX(-50%);
+	width: 1.5rem;
+}
+
+.leaflet-popup-content {
+	font-size: 14px;
+	margin: 0.75rem !important;
+}
+
+.leaflet-container {
+	font-family: inherit !important;
+}
+
+.leaflet-popup-close-button {
+	right: 0.375rem !important;
+	top: 0.375rem !important;
+	z-index: 1;
+}
+
+/**
+ * AUI PANE
+ * -------------------------------------------------------------------
+ */
+
+.m-pane {
+	background-color: white;
+	height: 100%;
+	width: 20rem;
+	z-index: 7;
+}
+
+.m-pane__content {
+	height: 100%;
+	overflow-y: scroll;
+}
+
+.m-pane--left,
+.m-pane--right {
+	position: absolute;
+	transition: transform 250ms ease-in-out;
+}
+
+.m-pane--left.m-pane--open,
+.m-pane--right.m-pane--open {
+	-ms-transform: translate(0);
+	    transform: translate(0);
+}
+
+.m-pane--left {
+	-ms-transform: translate(-100%);
+	    transform: translate(-100%);
+}
+
+.m-pane--right {
+	-ms-transform: translate(100%);
+	    transform: translate(100%);
+}
+
+/**
+ * AUI RANGE SLIDER
+ * -------------------------------------------------------------------
+ */
+
+.m-range-slider__handle {
+	z-index: 2;
+}
+
+.m-range-slider__tooltip {
+	white-space: nowrap;
+}
+
+.m-range-slider__steps {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+	left: 0;
+	padding: 0.25rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.m-range-slider__steps .m-range-slider__step {
+	background-color: #b0b0b0;
+	border-radius: 50%;
+	height: 0.75rem;
+	margin: 0.25rem;
+	text-align: center;
+	width: 0.75rem;
+}
+
+.m-range-slider .m-range-slider__step-labels {
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 14px;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+	margin-top: 1.125rem;
+}
+
+.m-range-slider .m-range-slider__step-labels .m-range-slider__step {
+	width: 1.5rem;
+}
+
+/**
+ * AUI SEARCH FILTER
+ * -------------------------------------------------------------------
+ */
+
+.m-search-filter__label {
+	background: white;
+	border: 1px solid #b0b0b0;
+	cursor: pointer;
+	display: -ms-flexbox;
+	display: flex;
+	height: 3rem;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	line-height: 3rem;
+	margin: 0 0.75rem 0.75rem 0;
+	padding-left: 1.5rem;
+}
+
+.m-search-filter__label > span:not(.fa) {
+	margin-left: 0.25rem;
+}
+
+.m-search-filter__label > .fa {
+	color: #7d7d7d;
+	font-size: 1.25rem;
+	height: 3rem;
+	line-height: 3rem;
+	pointer-events: none;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 3rem;
+}
+
+.m-search-filter__label.m-search-filter__label--active {
+	background-color: #009ed2;
+	border-color: #009ed2;
+	color: white;
+}
+
+.m-search-filter__label.m-search-filter__label--active > .fa {
+	color: white;
+}
+
+.m-search-filter__label.m-search-filter__label--error {
+	background-color: #da291c;
+	border-color: #da291c;
+	color: white;
+}
+
+.m-search-filter__label.m-search-filter__label--error > .fa {
+	color: white;
+}
+
+.m-search-filter__input {
+	margin-bottom: 0.75rem;
+	padding: 0.75rem;
+}
+
+.m-search-filter__input .a-input__wrapper {
+	margin-right: 0;
+}
+
+.m-search-filter__clear {
+	margin: 0;
+	padding: 1.125rem;
+	text-align: center;
+}
+
+.m-search-filter__search {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column-reverse;
+	    flex-direction: column-reverse;
+	max-height: 50vh;
+}
+
+.m-search-filter__search .a-list.a-list--lined.a-list--unstyled {
+	margin: -1px 0;
+}
+
+.m-search-filter__search.m-search-filter__search--scroll {
+	overflow-y: auto;
+}
+
+.m-search-filter__results-title {
+	font-size: 16px;
+	margin: 0 0.75rem;
+}
+
+.m-search-filter__results-item {
+	cursor: pointer;
+}
+
+.m-search-filter__results-item .a-input__checkbox {
+	display: -ms-flexbox;
+	display: flex;
+	padding-left: 2.25rem;
+}
+
+.m-search-filter__results-item .a-input__checkbox input[type='checkbox']:checked + label:after {
+	top: 0.75rem;
+}
+
+.m-search-filter__results-item .a-input__checkbox label {
+	-ms-flex: 1;
+	    flex: 1;
+	padding: 0.75rem;
+}
+
+.m-search-filter__results-item:hover {
+	background-color: #f3f3f3;
+}
+
+.m-search-filter .a-list .m-search-filter__results-item {
+	padding: 0;
+}
+
+/**
+ * AUI SIDEBAR
+ * -------------------------------------------------------------------
+ */
+
+/**
+ * PANE
+ * -------------------------------------------------------------------
+ */
+
+.o-sidebar {
+	background-color: white;
+	height: 100%;
+	overflow: hidden;
+	transition: width 250ms ease-in-out;
+	width: 0;
+}
+
+.o-sidebar__content {
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 20rem;
+}
+
+.o-sidebar__content--padding {
+	padding: 3rem;
+}
+
+.o-sidebar.o-sidebar--open {
+	width: 20rem;
+}
+
+/**
+ * AUI STATUSBAR
+ * -------------------------------------------------------------------
+ */
+
+.o-statusbar {
+	background: #0064b4;
+	color: white;
+	display: -ms-flexbox;
+	display: flex;
+	left: 0;
+	min-height: 3rem;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 8;
+}
+
+.o-statusbar.info {
+	background: #0064b4;
+}
+
+.o-statusbar.error {
+	background: #da291c;
+}
+
+.o-statusbar.warning {
+	background: #f9b01e;
+}
+
+.o-statusbar.success {
+	background: #4aa32c;
+}
+
+.o-statusbar__status {
+	-ms-flex-align: center;
+	    align-items: center;
+	background: rgba(0, 0, 0, 0.2);
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	width: 3rem;
+}
+
+.o-statusbar__notification {
+	-ms-flex-align: center;
+	    align-items: center;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex: 1;
+	    flex: 1;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	padding: 0.75rem;
+}
+
+.o-statusbar__notification p {
+	margin: 0;
+}
+
+.o-statusbar__notification a {
+	color: white;
+}
+
+.o-statusbar .a-button {
+	background: rgba(0, 0, 0, 0.2);
+	height: auto;
+	margin: 0;
+}
+
+.o-statusbar .a-button .fa {
+	-ms-flex-align: center;
+	    align-items: center;
+	display: -ms-flexbox;
+	display: flex;
+	height: 100%;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	line-height: initial;
+}
+
+/**
+ * AUI TABLE
+ * -------------------------------------------------------------------
+ * - Column selector
+ * - Table bar
+ */
+
+/**
+ * COLUMN SELECTOR
+ * -------------------------------------------------------------------
+ */
+
+.a-table-column-selector {
+	margin: 0 0 -1px;
+	max-height: 70vh;
+	overflow: auto;
+}
+
+.a-table-column-selector__actions {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	margin-left: 0.375rem;
+	margin-right: 0;
+}
+
+.a-table-column-selector > li {
+	-ms-flex-align: center;
+	    align-items: center;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+	padding: 0 0 0 inherit;
+}
+
+.a-table-column-selector > li:first-child {
+	border-top: none;
+}
+
+.a-table-column-selector > li:last-child {
+	border-bottom: none;
+}
+
+.a-table-column-selector > li.show {
+	animation: fadeIn 250ms ease-in-out;
+}
+
+.a-table-column-selector > li.active {
+	background-color: #f3f3f3;
+}
+
+.a-table-column-selector > li .a-button-transparent.has-icon[disabled] {
+	box-shadow: none;
+}
+
+/**
+ * TABLE BAR
+ * -------------------------------------------------------------------
+ */
+
+.a-table-bar {
+	background-color: #d8d8d8;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 0.75rem;
+}
+
+.a-table-bar__filters {
+	-ms-flex: 1;
+	    flex: 1;
+	margin-right: 1.5rem;
+	min-height: 3.75rem;
+	overflow: hidden;
+}
+
+.a-table-bar__filters-show-more {
+	margin: 0.375rem;
+}
+
+.a-table-bar__filters--open {
+	height: 100%;
+}
+
+.a-table-bar__item {
+	display: inline-block;
+	margin: 0.375rem;
+}
+
+.a-table-bar__search {
+	background: white;
+	height: 100%;
+	margin: 0.375rem;
+}
+
+/**
+ * AUI TIMEPICKER
+ * -------------------------------------------------------------------
+ */
+
+.m-timepicker .a-input {
+	display: inline-block;
+}
+
+/**
+ * AUI UPLOAD
+ * -------------------------------------------------------------------
+ */
+
+.m-upload__button input[type='file'] {
+	opacity: .01;
+}
+
 @media screen and (min-width: 30rem) {
 
 .u-wrapper {
@@ -5894,6 +6645,16 @@ dl {
 
 .m-modal--large {
 	max-width: 37.5rem;
+}
+
+.cc-banner {
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+}
+
+.cc-banner p,
+.cc-banner .cc-compliance {
+	width: auto;
 }
 
 }
@@ -5998,6 +6759,10 @@ figcaption {
 	width: 3.75rem;
 }
 
+.o-statusbar__notification {
+	padding: 0.75rem 2.25rem;
+}
+
 }
 
 @media screen and (min-width: 62rem) {
@@ -6020,6 +6785,18 @@ figcaption {
 
 .o-slideshow__next.o-slideshow__next--outside {
 	right: -4.5rem;
+}
+
+.o-statusbar__notification {
+	padding: 0.75rem 3rem;
+}
+
+}
+
+@media screen and (min-width: 75rem) {
+
+.o-statusbar__notification {
+	padding: 0.75rem 5.25rem;
 }
 
 }
@@ -6050,6 +6827,18 @@ figcaption {
 .o-footer__label {
 	-ms-flex: 1 1 auto;
 	    flex: 1 1 auto;
+}
+
+}
+
+@keyframes fadeIn {
+
+from {
+	opacity: 0;
+}
+
+to {
+	opacity: 1;
 }
 
 }
