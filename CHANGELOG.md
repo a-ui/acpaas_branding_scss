@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.0.2] - 2018-10-25
+### Fixed
+- Fixed a build issue
+
+
 ## [3.0.1] - 2018-10-25
 ### Changed
 - Updated to Core Branding v3.0.2
