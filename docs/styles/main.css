@@ -6244,7 +6244,7 @@ dl {
 	-ms-flex-pack: center;
 	    justify-content: center;
 	line-height: 3rem;
-	margin: 0 0.75rem 0.75rem 0;
+	margin: 0 0.75rem 0 0;
 	padding-left: 1.5rem;
 }
 
@@ -6287,7 +6287,7 @@ dl {
 }
 
 .m-search-filter__input {
-	margin-bottom: 0.75rem;
+	margin-bottom: 0;
 	padding: 0.75rem;
 }
 
@@ -6297,15 +6297,15 @@ dl {
 
 .m-search-filter__clear {
 	margin: 0;
-	padding: 1.125rem;
+	padding: 0 1.125rem 1.125rem;
 	text-align: center;
 }
 
 .m-search-filter__search {
 	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-direction: column-reverse;
-	    flex-direction: column-reverse;
+	-ms-flex-direction: column;
+	    flex-direction: column;
 	max-height: 50vh;
 }
 
@@ -6575,8 +6575,8 @@ dl {
  * -------------------------------------------------------------------
  */
 
-.m-upload__button input[type='file'] {
-	opacity: .01;
+.m-upload__button {
+	position: relative;
 }
 
 @media screen and (min-width: 30rem) {
