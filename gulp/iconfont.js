@@ -37,7 +37,7 @@ gulp.task('icon-font', function() {
 
             fontName: fontName,
             appendCodePoints: true,
-            formats: ['woff2', 'woff', 'ttf', 'eot', 'svg']
+            formats: ['woff', 'ttf', 'eot', 'svg']
 
         })).on('glyphs', function(glyphs, options) {
             // Create the __icons.scss file based

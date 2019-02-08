@@ -48,7 +48,13 @@ gulp.task('copy-docs', function() {
 
 });
 
-gulp.task('replace', function(){
+gulp.task('copy-travis', function() {
+    return gulp.src('dist/**/*')
+        .pipe(plumber())
+        .pipe(gulp.dest('dist/travis'));
+});
+
+gulp.task('replace', function() {
   gulp.src(['.tmp/**/*.css'])
     .pipe(replace('../../', '../'))
     .pipe(gulp.dest('docs'));

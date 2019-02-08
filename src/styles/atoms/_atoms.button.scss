@@ -17,7 +17,7 @@
   display: block;
   font-size: rem($btn-font-size);
   font-weight: $btn-font-weight;
-  line-height: $spacer-lg;
+  line-height: 1.25;
   margin: 0;
   min-height: $spacer-lg;
   padding: $btn-padding;
@@ -234,9 +234,8 @@
 
   &.a-button--tiny {
     font-size: rem($btn-font-size-ti);
-    line-height: $spacer;
     min-height: $spacer;
-    padding: 0 $spacer-xs;
+    padding: ($spacer-xs / 3) $spacer-xs;
 
     .fa {
       font-size: rem($btn-icon-size-ti);
@@ -245,8 +244,8 @@
 
   &.a-button--small {
     font-size: rem($btn-font-size-sm);
-    line-height: $spacer-md;
     min-height: $spacer-md;
+    padding: ($spacer-sm / 2) $spacer;
 
     .fa {
       font-size: rem($btn-icon-size-sm);
@@ -255,8 +254,8 @@
 
   &.a-button--large {
     font-size: rem($btn-font-size-lg);
-    line-height: $spacer-xl;
     min-height: $spacer-xl;
+    padding: $spacer-sm $spacer;
 
     .fa {
       font-size: rem($btn-icon-size-lg);

@@ -1,7 +1,0 @@
-{
-	"build" : {
-		"test" : {
-			"script": "NODE_ENV=test npm test > mocha.json"
-		}
-	}
-}
