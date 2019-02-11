@@ -34,7 +34,7 @@ var cssNano = [
 ];
 
 var autoPrefixer = [
-    autoprefixer({ browsers: ["last 3 versions"] })
+    autoprefixer({ browserslist: ["> 0.5%", "last 2 versions", "Firefox ESR", "not dead"] })
 ];
 
 var sassOptions = {

@@ -29,3 +29,12 @@ gulp.task('clean-docs', function () {
     ], { read: false })
         .pipe(clean());
 });
+
+gulp.task('clean-travis', function () {
+
+    return gulp.src([
+        'dist/*',
+        '!dist/travis'
+    ], { read: false })
+        .pipe(clean());
+});

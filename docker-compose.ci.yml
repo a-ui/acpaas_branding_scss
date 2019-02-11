@@ -1,5 +1,0 @@
-app:
-  image: node:boron
-  volumes:
-    - ".:/app"
-  working_dir: /app
