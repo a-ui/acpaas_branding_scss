@@ -1,11 +1,8 @@
 <div class="u-wrapper d-h2">
-    <div class="u-container">
-        <h2>Getting started</h2>
-    </div>
-</div>
-<div class="u-wrapper">
-    <div class="u-container u-margin-bottom-lg u-margin-top">
+    <div class="u-container u-margin-top">
         <p class="u-text-right u-margin-bottom"><a class="has-icon-left" href="https://github.com/a-ui/acpaas_branding_scss"><i class="fa fa-github"></i>View the code on GitHub</a></p>
+        <p class="u-text-right u-margin-bottom"><a class="has-icon-left" href="#toc"><i class="fa fa-list-ul"></i>Skip to table of contents</a></p>
+        <h2>Getting started</h2>
     </div>
 </div>
 <div class="u-wrapper">
@@ -23,9 +20,15 @@
             <p class="u-margin-top u-margin-bottom-xs">You can also install everything with npm:</p>
             <pre class="a-pre a-pre--scrollable"><code>npm install @a-ui/acpaas --save</code></pre>
             <p class="u-margin-top u-margin-bottom-xs">Then, you can import everything in your Sass setup (<code>main.min.css</code> also available):</p>
-            <pre class="a-pre a-pre--scrollable"><code>@import '@a-ui/acpaas/dist/main.css';</code></pre>
+            <pre class="a-pre a-pre--scrollable"><code>@import '~@a-ui/acpaas/dist/main.css';</code></pre>
             <p class="u-margin-top u-margin-bottom-xs">In order to extend our style kit you can make use of our Sass variables. Import them like this:</p>
-            <pre class="a-pre a-pre--scrollable"><code>@import '@a-ui/acpaas/dist/assets/styles/_quarks.scss';</code></pre>
+            <pre class="a-pre a-pre--scrollable"><code>@import '~@a-ui/core/dist/assets/styles/_quarks';
+@import '~@a-ui/acpaas/dist/assets/styles/_quarks';</code></pre>
+
+            <h2 class="u-margin-top-lg">Other resources</h2>
+            <h3 class="h5 has-base-font u-text-bold u-margin-top">Flexboxgrid</h3>
+            <p class="u-margin-top-xs u-margin-bottom-xs"><a href="https://github.com/a-ui/core_flexboxgrid_scss" title="a-ui/core_flexboxgrid_scss: Grid optimized to follow the ACPaaS styling guidelines." target="_blank" class="has-icon-right">https://github.com/a-ui/core_flexboxgrid_scss<i class="fa fa-external-link"></i></a></p>
+            <p class="u-margin-bottom">Grid optimized to follow the ACPaaS styling guidelines.</p>
         </div>
     </div>
 </div>

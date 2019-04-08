@@ -17,10 +17,8 @@
     the file from being downloaded
     -->
 
-    <!-- build:css styles/m.css -->
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/styleguide.css" />
-    <!-- endbuild -->
 
     <!-- SEO /////////////////////////////////////////////////////////
     - http://support.google.com/webmasters/bin/answer.py?hl=nl&answer=79812&topic=2371375&ctx=topic
@@ -68,17 +66,16 @@
         <div class="u-wrapper d-h1">
             <div class="u-container">
                 <h1>ACPaaS Branding Styleguide <small>v3.1.0</small></h1>
+                <p class="u-margin-top">A collection of building blocks for your next ACPaaS-based application.</p>
             </div>
         </div>
 
-        <div class="u-wrapper d-h2">
-    <div class="u-container">
-        <h2>Getting started</h2>
-    </div>
-</div>
-<div class="u-wrapper">
-    <div class="u-container u-margin-bottom-lg u-margin-top">
+        <div class="d-intro">
+            <div class="u-wrapper d-h2">
+    <div class="u-container u-margin-top">
         <p class="u-text-right u-margin-bottom"><a class="has-icon-left" href="https://github.com/a-ui/acpaas_branding_scss"><i class="fa fa-github"></i>View the code on GitHub</a></p>
+        <p class="u-text-right u-margin-bottom"><a class="has-icon-left" href="#toc"><i class="fa fa-list-ul"></i>Skip to table of contents</a></p>
+        <h2>Getting started</h2>
     </div>
 </div>
 <div class="u-wrapper">
@@ -96,16 +93,124 @@
             <p class="u-margin-top u-margin-bottom-xs">You can also install everything with npm:</p>
             <pre class="a-pre a-pre--scrollable"><code>npm install @a-ui/acpaas --save</code></pre>
             <p class="u-margin-top u-margin-bottom-xs">Then, you can import everything in your Sass setup (<code>main.min.css</code> also available):</p>
-            <pre class="a-pre a-pre--scrollable"><code>@import '@a-ui/acpaas/dist/main.css';</code></pre>
+            <pre class="a-pre a-pre--scrollable"><code>@import '~@a-ui/acpaas/dist/main.css';</code></pre>
             <p class="u-margin-top u-margin-bottom-xs">In order to extend our style kit you can make use of our Sass variables. Import them like this:</p>
-            <pre class="a-pre a-pre--scrollable"><code>@import '@a-ui/acpaas/dist/assets/styles/_quarks.scss';</code></pre>
+            <pre class="a-pre a-pre--scrollable"><code>@import '~@a-ui/core/dist/assets/styles/_quarks';
+@import '~@a-ui/acpaas/dist/assets/styles/_quarks';</code></pre>
+
+            <h2 class="u-margin-top-lg">Other resources</h2>
+            <h3 class="h5 has-base-font u-text-bold u-margin-top">Flexboxgrid</h3>
+            <p class="u-margin-top-xs u-margin-bottom-xs"><a href="https://github.com/a-ui/core_flexboxgrid_scss" title="a-ui/core_flexboxgrid_scss: Grid optimized to follow the ACPaaS styling guidelines." target="_blank" class="has-icon-right">https://github.com/a-ui/core_flexboxgrid_scss<i class="fa fa-external-link"></i></a></p>
+            <p class="u-margin-bottom">Grid optimized to follow the ACPaaS styling guidelines.</p>
         </div>
     </div>
 </div>
 
+        </div>
 
-        <a name="quarks"></a>
+        <div class="line u-bg-light">
+            <a name="toc"></a>
 <div class="u-wrapper d-h2">
+	<div class="u-container">
+		<h2>Table of contents</h2>
+	</div>
+</div>
+<div class="u-wrapper">
+	<div class="u-container u-margin-top d-toc">
+		<div class="d-toc__cell">
+			<h3 class="h5 has-base-font u-text-bold u-margin-bottom-xs">Quarks</h3>
+			<ul class="a-list a-list--unstyled a-list__toc">
+				<li><a href="#quarks-mixins">Mixins</a></li>
+				<li><a href="#quarks-functions">Functions</a></li>
+				<li><a href="#quarks-colors">Colors</a></li>
+				<li><a href="#quarks-variables">Variables</a></li>
+			</ul>
+		</div>
+		<div class="d-toc__cell">
+			<h3 class="h5 has-base-font u-text-bold u-margin-bottom-xs">Base</h3>
+			<ul class="a-list a-list--unstyled a-list__toc">
+				<li><a href="#base-layout">Layout</a></li>
+				<li><a href="#base-media">Media</a></li>
+				<li><a href="#base-typography">Typography</a></li>
+			</ul>
+		</div>
+		<div class="d-toc__cell">
+			<h3 class="h5 has-base-font u-text-bold u-margin-bottom-xs">Utilities</h3>
+			<ul class="a-list a-list--unstyled a-list__toc">
+				<li><a href="#utilities-background">Background</a></li>
+				<li><a href="#utilities-layout">Layout</a></li>
+				<li><a href="#utilities-spacing">Spacing</a></li>
+				<li><a href="#utilities-text">Text</a></li>
+			</ul>
+		</div>
+		<div class="d-toc__cell">
+			<h3 class="h5 has-base-font u-text-bold u-margin-bottom-xs">Atoms</h3>
+			<ul class="a-list a-list--unstyled a-list__toc">
+				<li><a href="#atoms-addon">Addon</a></li>
+				<li><a href="#atoms-avatar">Avatar</a></li>
+				<li><a href="#atoms-badge">Badge</a></li>
+				<li><a href="#atoms-button">Button</a></li>
+				<li><a href="#atoms-code">Code</a></li>
+				<li><a href="#atoms-copyright">Copyright</a></li>
+				<li><a href="#atoms-form">Form</a></li>
+				<li><a href="#atoms-input">Input</a></li>
+				<li><a href="#atoms-label">Label</a></li>
+				<li><a href="#atoms-link">Link</a></li>
+				<li><a href="#atoms-list">List</a></li>
+				<li><a href="#atoms-radiobutton-checkbox">Radio button / checkbox</a></li>
+				<li><a href="#atoms-spinner">Spinner</a></li>
+				<li><a href="#atoms-switch">Switch</a></li>
+				<li><a href="#atoms-table">Table</a></li>
+				<li><a href="#atoms-timepicker">Timepicker</a></li>
+				<li><a href="#atoms-toggle">Toggle</a></li>
+				<li><a href="#atoms-tooltip">Tooltip</a></li>
+			</ul>
+		</div>
+		<div class="d-toc__cell">
+			<h3 class="h5 has-base-font u-text-bold u-margin-bottom-xs">Molecules</h3>
+			<ul class="a-list a-list--unstyled a-list__toc">
+				<li><a href="#molecules-accordion">Accordion</a></li>
+				<li><a href="#molecules-alert">Alert</a></li>
+				<li><a href="#molecules-breadcrumb">Breadcrumb</a></li>
+				<li><a href="#molecules-button-group">Button group</a></li>
+				<li><a href="#molecules-button-list">Button list</a></li>
+				<li><a href="#molecules-card">Card</a></li>
+				<li><a href="#molecules-collapsible-list">Collapsible list</a></li>
+				<li><a href="#molecules-contact">Contact</a></li>
+				<li><a href="#molecules-datepicker">Datepicker</a></li>
+				<li><a href="#molecules-flyout">Flyout</a></li>
+				<li><a href="#molecules-gallery">Gallery</a></li>
+				<li><a href="#molecules-icon-list">Icon list</a></li>
+				<li><a href="#molecules-image">Image</a></li>
+				<li><a href="#molecules-modal">Modal</a></li>
+				<li><a href="#molecules-navigation">Navigation</a></li>
+				<li><a href="#molecules-overlay">Overlay</a></li>
+				<li><a href="#molecules-pagination">Pagination</a></li>
+				<li><a href="#molecules-progress">Progress</a></li>
+				<li><a href="#molecules-range-slider">Range slider</a></li>
+				<li><a href="#molecules-selectable-list">Selectable list</a></li>
+				<li><a href="#molecules-step-indicator">Step indicator</a></li>
+				<li><a href="#molecules-tag">Tag</a></li>
+				<li><a href="#molecules-upload">Upload</a></li>
+			</ul>
+		</div>
+		<div class="d-toc__cell">
+			<h3 class="h5 has-base-font u-text-bold u-margin-bottom-xs">Organisms</h3>
+			<ul class="a-list a-list--unstyled a-list__toc">
+				<li><a href="#organisms-footer">Footer</a></li>
+				<li><a href="#organisms-header">Header</a></li>
+				<li><a href="#organisms-slideshow">Slideshow</a></li>
+				<li><a href="#organisms-tag-list">Tag list</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+        </div>
+
+        <div class="line">
+            <a name="quarks"></a>
+<div class="u-wrapper u-margin-top d-h2">
     <div class="u-container">
         <h2>Quarks</h2>
     </div>
@@ -536,9 +641,11 @@
     </div>
 </div>
 
+        </div>
 
-        <a name="base"></a>
-<div class="u-wrapper d-h2">
+        <div class="line">
+            <a name="base"></a>
+<div class="u-wrapper u-margin-top d-h2">
     <div class="u-container">
         <h2>Base</h2>
     </div>
@@ -697,15 +804,17 @@
     </div>
 </div>
 
+        </div>
 
-        <div class="u-wrapper d-h2">
+        <div class="line">
+            <div class="u-wrapper u-margin-top d-h2">
     <div class="u-container">
         <h2>Utilities</h2>
     </div>
 </div>
 <div class="u-wrapper">
     <div class="u-container">
-        <a name="utilitites-background"></a>
+        <a name="utilities-background"></a>
         <h3 class="d-h3">Background</h3>
         <span class="d-file">utilities/utilities.background</span>
         <div class="d">
@@ -796,7 +905,7 @@
         </div>
         
 
-        <a name="utilitites-layout"></a>
+        <a name="utilities-layout"></a>
         <h3 class="d-h3">Layout</h3>
         <span class="d-file">utilities/utilities.layout</span>
         <div class="d">
@@ -876,7 +985,7 @@
             </div>
         </div>
 
-        <a name="utilitites-spacing"></a>
+        <a name="utilities-spacing"></a>
         <h3 class="d-h3">Spacing</h3>
         <span class="d-file">utilities/utilities.spacing</span>
         <div class="d">
@@ -1161,7 +1270,7 @@
         </div>
         
 
-        <a name="utilitites-text"></a>
+        <a name="utilities-text"></a>
         <h3 class="d-h3">Text</h3>
         <span class="d-file">utilities/utilities.text</span>
         <div class="d">
@@ -1432,8 +1541,10 @@
     </div>
 </div>
 
+        </div>
 
-        <div class="u-wrapper d-h2">
+        <div class="line">
+            <div class="u-wrapper u-margin-top d-h2">
     <div class="u-container">
         <h2>Atoms</h2>
     </div>
@@ -4050,8 +4161,10 @@
     </div>
 </div>
 
+        </div>
 
-        <div class="u-wrapper d-h2">
+        <div class="line">
+            <div class="u-wrapper u-margin-top d-h2">
     <div class="u-container">
         <h2>Molecules</h2>
     </div>
@@ -4288,6 +4401,90 @@
   &lt;button class="a-button-negative"&gt;Group&lt;/button&gt;
 &lt;/div&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="m-button-group"&gt;
+  &lt;button class="a-button-outline"&gt;Primary&lt;/button&gt;
+  &lt;button class="a-button-outline"&gt;Button&lt;/button&gt;
+  &lt;button class="a-button-outline"&gt;Group&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div>
+                    <div class="m-button-group m-button-group--vertical u-margin-bottom">
+                        <button class="a-button">Primary</button>
+                        <button class="a-button">Button</button>
+                        <button class="a-button">Group</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="m-button-group m-button-group--vertical u-margin-bottom">
+                        <button class="a-button-negative">Primary</button>
+                        <button class="a-button-negative">Button</button>
+                        <button class="a-button-negative">Group</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="m-button-group m-button-group--vertical u-margin-bottom">
+                        <button class="a-button-outline">Primary</button>
+                        <button class="a-button-outline">Button</button>
+                        <button class="a-button-outline">Group</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="m-button-group m-button-group--vertical"&gt;
+  &lt;button class="a-button"&gt;Primary&lt;/button&gt;
+  &lt;button class="a-button"&gt;Button&lt;/button&gt;
+  &lt;button class="a-button"&gt;Group&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="m-button-group m-button-group--vertical"&gt;
+  &lt;button class="a-button-negative"&gt;Primary&lt;/button&gt;
+  &lt;button class="a-button-negative"&gt;Button&lt;/button&gt;
+  &lt;button class="a-button-negative"&gt;Group&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="m-button-group m-button-group--vertical"&gt;
+  &lt;button class="a-button-outline"&gt;Primary&lt;/button&gt;
+  &lt;button class="a-button-outline"&gt;Button&lt;/button&gt;
+  &lt;button class="a-button-outline"&gt;Group&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div>
+                    <div class="m-button-group m-button-group--vertical u-margin-bottom">
+                        <button class="a-button">Primary</button>
+                        <button class="a-button">Button</button>
+                        <button class="a-button">Group</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="m-button-group m-button-group--vertical u-margin-bottom">
+                        <button class="a-button-negative">Primary</button>
+                        <button class="a-button-negative">Button</button>
+                        <button class="a-button-negative">Group</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="m-button-group m-button-group--vertical u-margin-bottom">
+                        <button class="a-button-outline">Primary</button>
+                        <button class="a-button-outline">Button</button>
+                        <button class="a-button-outline">Group</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="m-button-group m-button-group--vertical"&gt;
+  &lt;button class="a-button"&gt;Primary&lt;/button&gt;
+  &lt;button class="a-button"&gt;Button&lt;/button&gt;
+  &lt;button class="a-button"&gt;Group&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="m-button-group m-button-group--vertical"&gt;
+  &lt;button class="a-button-negative"&gt;Primary&lt;/button&gt;
+  &lt;button class="a-button-negative"&gt;Button&lt;/button&gt;
+  &lt;button class="a-button-negative"&gt;Group&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="m-button-group m-button-group--vertical"&gt;
   &lt;button class="a-button-outline"&gt;Primary&lt;/button&gt;
   &lt;button class="a-button-outline"&gt;Button&lt;/button&gt;
   &lt;button class="a-button-outline"&gt;Group&lt;/button&gt;
@@ -6310,8 +6507,10 @@
     </div>
 </div>
 
+        </div>
 
-        <div class="u-wrapper d-h2">
+        <div class="line">
+            <div class="u-wrapper u-margin-top d-h2">
     <div class="u-container">
         <h2>Organisms</h2>
     </div>
@@ -6675,6 +6874,7 @@
     </div>
 </div>
 
+        </div>
 
         <footer class="o-footer">
             <span class="o-footer__label">© 2017 Digipolis</span>

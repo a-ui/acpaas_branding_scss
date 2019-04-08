@@ -1,0 +1,185 @@
+/**
+ * TYPOGRAPHY
+ * -------------------------------------------------------------------
+ */
+
+
+/**
+ * BASE
+ * -------------------------------------------------------------------
+ */
+
+body {
+  color: $text-color;
+  font-family: $font-family-base;
+  font-size: rem($font-size-base);
+  line-height: $line-height-base;
+}
+
+::selection {
+  background-color: $selection-color;
+}
+
+
+/**
+ * HEADERS
+ * -------------------------------------------------------------------
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: $font-family-headings;
+  line-height: $line-height-headings;
+  margin: 0;
+
+  &.has-base-font {
+    font-family: $font-family-base;
+  }
+}
+
+h1,
+.h1 {
+  font-size: rem($font-size-h1);
+  font-weight: $font-weight-h1;
+}
+
+h2,
+.h2 {
+  font-size: rem($font-size-h2);
+  font-weight: $font-weight-h2;
+}
+
+h3,
+.h3 {
+  font-size: rem($font-size-h3);
+  font-weight: $font-weight-h3;
+}
+
+h4,
+.h4 {
+  font-size: rem($font-size-h4);
+  font-weight: $font-weight-h4;
+}
+
+h5,
+.h5 {
+  font-size: rem($font-size-h5);
+  font-weight: $font-weight-h5;
+}
+
+h6,
+.h6 {
+  font-size: rem($font-size-h6);
+  font-weight: $font-weight-h6;
+}
+
+
+/**
+ * PARAGRAPHS
+ * -------------------------------------------------------------------
+ */
+
+p {
+  font-size: rem($font-size-base);
+  line-height: $line-height-paragraph;
+  margin: 0;
+}
+
+
+/**
+ * BLOCKQUOTES
+ * -------------------------------------------------------------------
+ */
+
+blockquote {
+  border-left: 1px solid $border-color;
+  margin: 0;
+  padding: $spacer-xs 0 $spacer-xs $spacer;
+
+  p {
+    display: inline;
+    font-family: $font-family-headings;
+  }
+
+  cite {
+    color: $cite-color;
+    display: inline-block;
+    font-style: normal;
+    line-height: $line-height-headings;
+
+    &:before {
+      content: '— ';
+    }
+  }
+}
+
+
+/**
+ * SMALL
+ * -------------------------------------------------------------------
+ */
+
+small,
+.small {
+  color: $text-color-light;
+  font-size: rem($font-size-sm);
+}
+
+
+/**
+ * MARK
+ * -------------------------------------------------------------------
+ */
+
+mark {
+  background-color: $mark-bg;
+  color: $mark-color;
+  padding: 0 .125rem;
+}
+
+
+/**
+ * HORIZONTAL RULES
+ * -------------------------------------------------------------------
+ */
+
+hr {
+  border: none;
+  border-top: 1px solid $border-color;
+  height: 1px;
+  margin: $spacer 0;
+}
+
+
+/**
+ * LINKS
+ * -------------------------------------------------------------------
+ */
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: color $animation-duration $animation-easing;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px $input-border-focus;
+    outline: none;
+  }
+}
