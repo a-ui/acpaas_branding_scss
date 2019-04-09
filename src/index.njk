@@ -17,10 +17,8 @@
     the file from being downloaded
     -->
 
-    <!-- build:css styles/m.css -->
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/styleguide.css" />
-    <!-- endbuild -->
 
     <!-- SEO /////////////////////////////////////////////////////////
     - http://support.google.com/webmasters/bin/answer.py?hl=nl&answer=79812&topic=2371375&ctx=topic
@@ -68,22 +66,41 @@
         <div class="u-wrapper d-h1">
             <div class="u-container">
                 <h1>ACPaaS Branding Styleguide <small>v{{ VERSION_INFO.version }}</small></h1>
+                <p class="u-margin-top">A collection of building blocks for your next ACPaaS-based application.</p>
             </div>
         </div>
 
-        {% include "templates/intro.njk" %}
+        <div class="d-intro">
+            {% include "templates/intro.njk" %}
+        </div>
 
-        {% include "templates/quarks.njk" %}
+        <div class="line u-bg-light">
+            {% include "templates/toc.njk" %}
+        </div>
 
-        {% include "templates/base.njk" %}
+        <div class="line">
+            {% include "templates/quarks.njk" %}
+        </div>
 
-        {% include "templates/utilities.njk" %}
+        <div class="line">
+            {% include "templates/base.njk" %}
+        </div>
 
-        {% include "templates/atoms.njk" %}
+        <div class="line">
+            {% include "templates/utilities.njk" %}
+        </div>
 
-        {% include "templates/molecules.njk" %}
+        <div class="line">
+            {% include "templates/atoms.njk" %}
+        </div>
 
-        {% include "templates/organisms.njk" %}
+        <div class="line">
+            {% include "templates/molecules.njk" %}
+        </div>
+
+        <div class="line">
+            {% include "templates/organisms.njk" %}
+        </div>
 
         <footer class="o-footer">
             <span class="o-footer__label">© 2017 Digipolis</span>
