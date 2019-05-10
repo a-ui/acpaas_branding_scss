@@ -7,13 +7,13 @@ This project contains ACPaaS' digital styling and styling guidelines. It is the 
 In its simplest form you can just include the following line in the `<head>` section of your app.
 
 ```
-<link rel="stylesheet" href="https://cdn.antwerpen.be/acpaas_branding_scss/3.2.0/main.min.css">
+<link rel="stylesheet" href="https://cdn.antwerpen.be/acpaas_branding_scss/3.2.1/main.min.css">
 ```
 
 You can even import it directly in your (S)CSS:
 
 ```
-@import url("https://cdn.antwerpen.be/acpaas_branding_scss/3.2.0/main.min.css");
+@import url("https://cdn.antwerpen.be/acpaas_branding_scss/3.2.1/main.min.css");
 ```
 
 > We adopt semantic versioning. If you want to use another version of the ACPaaS Branding you can do so by adjusting the version in the URL address. See the changelog for all available versions.
