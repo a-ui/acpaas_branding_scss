@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.2.1] - 2019-05-09
+## [3.2.1] - 2019-05-10
 ### Fixed
 - Fixed cookie consent not hiding when consented
 
