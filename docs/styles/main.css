@@ -5837,9 +5837,15 @@ dl {
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	left: 0;
+	opacity: 1;
 	position: fixed;
 	right: 0;
+	transition: opacity 250ms ease-in-out;
 	z-index: 10;
+}
+
+.cc-banner.cc-invisible {
+	opacity: 0;
 }
 
 .cc-banner p,
