@@ -7,11 +7,11 @@
     "url": "https://github.com/a-ui/acpaas_branding_scss.git"
   },
   "scripts": {
-    "prepublish": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
     "start": "gulp server",
-    "travis": "gulp travis"
+    "travis": "gulp travis",
+    "version": "gulp docs && git add -A ."
   },
   "contributors": [
     {
@@ -26,35 +26,30 @@
   "license": "MIT",
   "devDependencies": {
     "@a-ui/core": "^3.2.1",
-    "autoprefixer": "^6.7.5",
-    "browser-sync": "^2.18.8",
-    "cssnano": "^3.10.0",
-    "glob": "^7.1.2",
-    "gulp": "^3.9.1",
-    "gulp-bump": "^2.7.0",
-    "gulp-clean": "^0.3.2",
+    "autoprefixer": "^9.5.1",
+    "browser-sync": "^2.26.5",
+    "cssnano": "^4.1.10",
+    "del": "^4.1.1",
+    "glob": "^7.1.4",
+    "gulp": "^4.0.2",
     "gulp-consolidate": "^0.2.0",
     "gulp-css-url-adjuster": "^0.2.3",
-    "gulp-git": "^2.0.1",
     "gulp-header-license": "^1.0.9",
-    "gulp-iconfont": "^8.0.1",
-    "gulp-imagemin": "^3.1.1",
+    "gulp-iconfont": "^10.0.2",
+    "gulp-imagemin": "^5.0.3",
     "gulp-merge-media-queries": "^0.2.1",
-    "gulp-nunjucks": "^3.0.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-postcss": "^6.3.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-replace": "^0.5.4",
-    "gulp-sass": "^3.1.0",
-    "gulp-sass-lint": "^1.3.2",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-util": "^3.0.8",
-    "gulp-watch": "^4.3.11",
+    "gulp-nunjucks": "^5.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-watch": "^5.0.1",
     "list-selectors": "^2.0.0",
-    "lodash": "^4.17.4",
-    "merge-stream": "^1.0.1",
-    "run-sequence": "^1.2.2",
+    "lodash": "^4.17.11",
+    "merge-stream": "^2.0.0",
     "sass-vars-to-js": "^0.8.7",
-    "yargs": "^8.0.1"
+    "yargs": "^13.2.4"
   }
 }
