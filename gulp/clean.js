@@ -1,40 +1,26 @@
 // -------------------------------------------------------------------
 // :: CLEAN
 // -------------------------------------------------------------------
-// - https://www.npmjs.org/package/gulp-clean
+// - https://www.npmjs.com/package/del
 
 var gulp = require('gulp');
-var clean = require('gulp-clean');
+var del = require('del');
 
-gulp.task('clean', function () {
-
-    return gulp.src([
-        '.tmp'
-    ], { read: false })
-        .pipe(clean());
+gulp.task('clean:tmp', function () {
+    return del(['.tmp']);
 });
 
-gulp.task('clean-dist', function () {
-
-    return gulp.src([
-        'dist'
-    ], { read: false })
-        .pipe(clean());
+gulp.task('clean:dist', function () {
+    return del(['dist']);
 });
 
-gulp.task('clean-docs', function () {
-
-    return gulp.src([
-        'docs'
-    ], { read: false })
-        .pipe(clean());
+gulp.task('clean:docs', function () {
+    return del(['docs']);
 });
 
-gulp.task('clean-travis', function () {
-
-    return gulp.src([
+gulp.task('clean:travis', function () {
+    return del([
         'dist/*',
         '!dist/travis'
-    ], { read: false })
-        .pipe(clean());
+    ]);
 });
