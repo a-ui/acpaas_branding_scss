@@ -29,7 +29,7 @@ function getTemplateData(){
 
     data.VERSION_INFO = JSON.parse(fs.readFileSync('package.json', 'utf8'));
     data.COLORS = stripDefaults(sassVars('node_modules/@a-ui/core/dist/assets/styles/quarks/_quarks.colors.scss'));
-    data.VARIABLES = stripDefaults(sassVars('src/styles/quarks/_quarks.variables.scss'));
+    data.VARIABLES = sassVars('src/styles/quarks/_quarks.variables.scss');
 
     var icons = glob.sync("node_modules/@a-ui/core/dist/assets/icons/*.svg");
 	for(var i in icons) {
