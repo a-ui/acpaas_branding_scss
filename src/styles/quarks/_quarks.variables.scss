@@ -3,15 +3,26 @@
  * -------------------------------------------------------------------
  */
 
+// Extras
+// $brand-tertiary: #322a56 !default;
+// $brand-quaternary: #8e87fc !default;
+// $brand-quinery: #e24814 !default;
 
-$font-family-base: 'Open Sans';
-$font-family-headings: 'Slabo 27px';
-$font-family-monospace: 'Roboto Mono', Menlo, Monaco, Consolas, 'Courier New', monospace;
-$brand-primary: #009ed2;
-$brand-secondary: #0080a4;
-$header-bg: darken($brand-primary, 4%);
+// Overrides
+$font-family-base: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-headings: 'Titillium Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-monospace: Menlo, Monaco, Consolas, 'Courier New', monospace;
+$brand-primary: #1730e2;
+$brand-secondary: #322a56;
+
+$state-success: #01afb8;
+$state-warning: #8e87fc;
+$state-danger: #e24814;
+
+$header-bg: $brand-secondary;
 $header-border: rgba($black, 0);
-$spacer: 1.5rem;
 $header-height: calc(3rem + 1px);
-$icon-list-hover-color: rgb(241, 138, 0); // $tangerine
-$spacer-xx: $spacer * 3.5;
+$icon-list-hover-color: rgb(241, 138, 0);
+// $link-color: $brand-tertiary;
+// $btn-primary-bg: $brand-tertiary;
+// $btn-transparent-color: $brand-tertiary;
