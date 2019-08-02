@@ -3,26 +3,16 @@
  * -------------------------------------------------------------------
  */
 
-// Extras
-// $brand-tertiary: #322a56 !default;
-// $brand-quaternary: #8e87fc !default;
-// $brand-quinery: #e24814 !default;
-
 // Overrides
 $font-family-base: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family-headings: 'Titillium Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family-monospace: Menlo, Monaco, Consolas, 'Courier New', monospace;
 $brand-primary: #1730e2;
 $brand-secondary: #322a56;
-
 $state-success: #01afb8;
 $state-warning: #8e87fc;
 $state-danger: #e24814;
-
 $header-bg: $brand-secondary;
 $header-border: rgba($black, 0);
 $header-height: calc(3rem + 1px);
 $icon-list-hover-color: rgb(241, 138, 0);
-// $link-color: $brand-tertiary;
-// $btn-primary-bg: $brand-tertiary;
-// $btn-transparent-color: $brand-tertiary;
