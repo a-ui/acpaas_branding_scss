@@ -86,13 +86,13 @@ footer {
 }
 
 .d-h1 {
-  background-color: $state-success;
+  background-color: $brand-tertiary;
   color: $brand-secondary;
   padding-bottom: $spacer;
   padding-top: $spacer * 3.5;
 
   small {
-    color: $grey-light;
+    color: $white;
   }
 
   @include at($screen-xs) {
