@@ -108,7 +108,7 @@
   }
 
   &.a-button--snapchat {
-    @include a-button($white, $snapchat);
+    @include a-button($text-color, $snapchat);
   }
 
   &.a-button--instagram {
@@ -146,22 +146,10 @@
  */
 
 .a-button-negative {
-  @include a-button($btn-primary-bg, $btn-primary-color);
+  @include a-button($btn-primary-negative-color, $btn-primary-negative-bg);
 
   &.a-button--secondary {
-    @include a-button($btn-secondary-bg, $btn-secondary-color);
-  }
-
-  &.a-button--success {
-    @include a-button($btn-success-bg, $btn-success-color);
-  }
-
-  &.a-button--warning {
-    @include a-button($btn-warning-bg, $btn-warning-color);
-  }
-
-  &.a-button--danger {
-    @include a-button($btn-danger-bg, $btn-danger-color);
+    @include a-button($btn-secondary-negative-color, $btn-secondary-negative-bg);
   }
 }
 
@@ -175,19 +163,19 @@
   @include a-button-outline;
 
   &.a-button--secondary {
-    @include a-button-outline($btn-secondary-bg);
+    @include a-button-outline($btn-secondary-outline-color, $btn-secondary-outline-border);
   }
 
   &.a-button--success {
-    @include a-button-outline($btn-success-bg);
+    @include a-button-outline($btn-success-outline-color, $btn-success-outline-border);
   }
 
   &.a-button--warning {
-    @include a-button-outline($btn-warning-bg);
+    @include a-button-outline($btn-warning-outline-color, $btn-warning-outline-border);
   }
 
   &.a-button--danger {
-    @include a-button-outline($btn-danger-bg);
+    @include a-button-outline($btn-danger-outline-color, $btn-danger-outline-border);
   }
 }
 
@@ -198,26 +186,26 @@
  */
 
 .a-button-transparent.has-icon {
-  @include a-button-outline($btn-primary-bg, transparent, false);
+  @include a-button-outline($btn-primary-outline-color, $btn-primary-outline-border, true);
 
   &.a-button--secondary {
-    @include a-button-outline($btn-secondary-bg, transparent, false);
+    @include a-button-outline($btn-secondary-outline-color, $btn-secondary-outline-border, true);
   }
 
   &.a-button--success {
-    @include a-button-outline($btn-success-bg, transparent, false);
+    @include a-button-outline($btn-success-outline-color, $btn-success-outline-border, true);
   }
 
   &.a-button--warning {
-    @include a-button-outline($btn-warning-bg, transparent, false);
+    @include a-button-outline($btn-warning-outline-color, $btn-warning-outline-border, true);
   }
 
   &.a-button--danger {
-    @include a-button-outline($btn-danger-bg, transparent, false);
+    @include a-button-outline($btn-danger-outline-color, $btn-danger-outline-border, true);
   }
 
   &.a-button--default {
-    @include a-button-outline($btn-default-bg, transparent, false);
+    @include a-button-outline($btn-default-outline-color, $btn-default-outline-border, true);
   }
 }
 
@@ -235,7 +223,7 @@
   &.a-button--tiny {
     font-size: rem($btn-font-size-ti);
     min-height: $spacer;
-    padding: ($spacer-xs / 3) $spacer-xs;
+    padding: ($spacer-xs / 4) $spacer-xs ($spacer-xs / 3);
 
     .fa {
       font-size: rem($btn-icon-size-ti);

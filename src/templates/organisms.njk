@@ -5,8 +5,8 @@
 </div>
 <div class="u-wrapper">
     <div class="u-container">
-        <a name="organisms-footer"></a>
-        <h3 class="d-h3">Footer</h3>
+        <a name="organisms-footer" aria-label="Footer"></a>
+        <h3 class="u-margin-top-lg">Footer</h3>
         <span class="d-file">organisms/organisms.footer</span>
         <div class="d">
             <div>
@@ -14,39 +14,71 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;footer class="o-footer"&gt;
-  &lt;span class="o-footer__label"&gt;© 2017 Digipolis&lt;/span&gt;
+  &lt;span class="o-footer__label"&gt;© 2019 Digipolis&lt;/span&gt;
   &lt;a href="#" class="o-footer__button a-button a-button--secondary has-icon"&gt;
-    &lt;i class="fa fa-arrow-up"&gt;&lt;/i&gt;
+    &lt;span class="fa fa-arrow-up"&gt;&lt;/span&gt;
   &lt;/a&gt;
 &lt;/footer&gt;</code></pre>
             </div>
         </div>
 
-        <a name="organisms-header"></a>
-        <h3 class="d-h3">Header</h3>
+        <a name="organisms-header" aria-label="Header"></a>
+        <h3 class="u-margin-top-lg">Header</h3>
         <span class="d-file">organisms/organisms.header</span>
         <div class="d">
             <div>
-                <p>For a visible example of the header, take a look at the very top of this page.</p>
-                <div class="m-alert d-alert u-margin-bottom">
-                    <p>In order to make the header stay on top, just add the <code>.has-header</code> class to the <code>body</code> tag and the <code>o-header--fixed</code> class to the header, as demonstrated in the example.</p>
-                </div>
+                <header class="o-header u-margin-bottom-xx" aria-label="Demo header">
+                    <a href="#main-content" class="a-button-negative o-header__button o-header__button-skip">Skip to main content</a>
+                    <a href="javascript:void(0);" class="o-header__logo">
+                        <img src="images/acpaas-logo.svg" alt="Officieel logo ACPaaS">
+                    </a>
+                </header>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;header class="o-header"&gt;
-  ...
+  &lt;a href="#main-content" class="a-button-negative o-header__button o-header__button-skip"&gt;Skip to main content&lt;/a&gt;
+  &lt;a href="#" class="o-header__logo"&gt;
+    &lt;img src="images/acpaas-logo.svg" alt="Official logo ACPaaS"&gt;
+  &lt;/a&gt;
 &lt;/header&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code>&lt;body class="has-header"&gt;
-
-&lt;header class="o-header o-header--fixed"&gt;
-  ...
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <header class="o-header" aria-label="Demo header with navigation">
+                    <div class="o-header__content-wrapper">
+                        <div class="o-header__content">
+                            <a href="#main-content" class="a-button-negative o-header__button o-header__button-skip">Skip to main content</a>
+                            <a href="javascript:void(0);" class="o-header__logo">
+                                <img src="images/acpaas-logo.svg" alt="Officieel logo ACPaaS">
+                            </a>
+                        </div>
+                        <div class="o-header__menu-items">
+                            <a href="javascript:void(0);" class="a-button-negative o-header__button">Menu button</a>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;header class="o-header"&gt;
+  &lt;div class="o-header__content-wrapper"&gt;
+    &lt;div class="o-header__content"&gt;
+      &lt;a href="#main-content" class="a-button-negative o-header__button o-header__button-skip"&gt;Skip to main content&lt;/a&gt;
+      &lt;a href="#" class="o-header__logo"&gt;
+        &lt;img src="images/acpaas-logo.svg" alt="Officieel logo ACPaaS"&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="o-header__menu-items"&gt;
+      &lt;a href="#" class="a-button-negative o-header__button"&gt;Menu button&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/header&gt;</code></pre>
             </div>
         </div>
 
-        <a name="organisms-slideshow"></a>
-        <h3 class="d-h3">Slideshow</h3>
-        <h4 class="d-h4">Regular slideshow</h4>
+        <a name="organisms-slideshow" aria-label="Slideshow"></a>
+        <h3 class="u-margin-top-lg">Slideshow</h3>
+        <h4 class="u-margin-top-lg">Regular slideshow</h4>
         <span class="d-file">organisms/organisms.slideshow</span>
         <div class="d">
             <div>
@@ -145,17 +177,17 @@
             </div>
         </div>
 
-        <h4 class="d-h4">Slideshow overlay</h4>
+        <h4 class="u-margin-top-lg">Slideshow overlay</h4>
         <div class="d">
             <div>
-                <div class="a-input d-overlay">
+                <div class="a-input u-margin-bottom-lg d-overlay">
                     <div class="a-switch">
                         <label class="a-switch__label">Hide slideshow overlay</label>
                         <div class="a-switch__toggle">
-                            <input type="checkbox" name="input-slideshow" id="input-slideshow">
-                            <label for="input-slideshow"></label>
+                            <input type="checkbox" name="input-slideshow" id="input-slideshow" role="switch" aria-checked="false">
+                            <label for="input-slideshow"><span class="u-screen-reader-only">Toggle overlay</span></label>
                             <div class="m-overlay">
-                                <label for="input-slideshow"><a class="m-overlay__button"><span class="fa fa-close"></span></a></label>
+                                <label for="input-slideshow"><a class="m-overlay__button"><span class="fa fa-close"><span class="u-screen-reader-only">Close overlay</span></span></a></label>
                                 <div class="m-overlay__slideshow o-slideshow o-slideshow--transparent">
                                     <div class="o-slideshow__inner">
                                         <div class="o-slideshow__prev o-slideshow__prev--outside"></div>
@@ -209,9 +241,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="m-overlay"&gt;
-  &lt;button class="m-overlay__button"&gt;
-    &lt;span class="fa fa-close"&gt;&lt;/span&gt;
-  &lt;/button&gt;
+  &lt;label for="input-slideshow"&gt;&lt;a class="m-overlay__button"&gt;&lt;span class="fa fa-close"&gt;&lt;span class="u-screen-reader-only"&gt;Close overlay&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/label&gt;
   &lt;div class="m-overlay__slideshow o-slideshow o-slideshow--transparent"&gt;
     &lt;div class="o-slideshow__inner"&gt;
       &lt;div class="o-slideshow__prev o-slideshow__prev--outside"&gt;&lt;/div&gt;
@@ -261,8 +291,8 @@
             </div>
         </div>
 
-        <a name="organisms-tag-list"></a>
-        <h3 class="d-h3">Tag list</h3>
+        <a name="organisms-tag-list" aria-label="Tag list"></a>
+        <h3 class="u-margin-top-lg">Tag list</h3>
         <span class="d-file">organisms/organisms.tag-list</span>
         <div class="d">
             <div>
@@ -296,15 +326,15 @@
                 <ul class="o-tag-list">
                     <li class="m-tag">
                         <span class="m-tag__label">Thomas Edison</span>
-                        <button class="a-button-transparent a-button--small a-button--danger has-icon"><i class="fa fa-close"></i></button>
+                        <button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"><span class="fa fa-close"></span></button>
                     </li>
                     <li class="m-tag">
                         <span class="m-tag__label">Leonardo da Vinci</span>
-                        <button class="a-button-transparent a-button--small a-button--danger has-icon"><i class="fa fa-close"></i></button>
+                        <button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"><span class="fa fa-close"></span></button>
                     </li>
                     <li class="m-tag">
                         <span class="m-tag__label">Albert Einstein</span>
-                        <button class="a-button-transparent a-button--small a-button--danger has-icon"><i class="fa fa-close"></i></button>
+                        <button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"><span class="fa fa-close"></span></button>
                     </li>
                 </ul>
             </div>
@@ -312,15 +342,15 @@
                 <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="o-tag-list"&gt;
   &lt;li class="m-tag"&gt;
     &lt;span class="m-tag__label"&gt;Thomas Edison&lt;/span&gt;
-    &lt;button class="a-button-transparent a-button--small a-button--danger has-icon"&gt;&lt;i class="fa fa-close"&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"&gt;&lt;span class="fa fa-close"&gt;&lt;/span&gt;&lt;/button&gt;
   &lt;/li&gt;
   &lt;li class="m-tag"&gt;
     &lt;span class="m-tag__label"&gt;Leonardo da Vinci&lt;/span&gt;
-    &lt;button class="a-button-transparent a-button--small a-button--danger has-icon"&gt;&lt;i class="fa fa-close"&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"&gt;&lt;span class="fa fa-close"&gt;&lt;/span&gt;&lt;/button&gt;
   &lt;/li&gt;
   &lt;li class="m-tag"&gt;
     &lt;span class="m-tag__label"&gt;Albert Einstein&lt;/span&gt;
-    &lt;button class="a-button-transparent a-button--small a-button--danger has-icon"&gt;&lt;i class="fa fa-close"&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"&gt;&lt;span class="fa fa-close"&gt;&lt;/span&gt;&lt;/button&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
@@ -329,15 +359,15 @@
             <div>
                 <ul class="o-tag-list">
                     <li class="m-tag">
-                        <button class="a-button a-button--default a-button--small has-icon"><i class="fa fa-check"></i></button>
+                        <button class="a-button a-button--default a-button--small has-icon" aria-label="Accept"><span class="fa fa-check"></span></button>
                         <span class="m-tag__label">Thomas Edison</span>
                     </li>
                     <li class="m-tag">
-                        <button class="a-button a-button--success a-button--small has-icon"><i class="fa fa-check"></i></button>
+                        <button class="a-button a-button--success a-button--small has-icon" aria-label="Accept"><span class="fa fa-check"></span></button>
                         <span class="m-tag__label">Leonardo da Vinci</span>
                     </li>
                     <li class="m-tag">
-                        <button class="a-button a-button a-button--small has-icon"><i class="fa fa-arrows"></i></button>
+                        <button class="a-button a-button a-button--small has-icon" aria-label="Drag"><span class="fa fa-arrows"></span></button>
                         <span class="m-tag__label">Albert Einstein</span>
                     </li>
                 </ul>
@@ -345,15 +375,15 @@
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="o-tag-list"&gt;
   &lt;li class="m-tag"&gt;
-    &lt;button class="a-button a-button--default a-button--small has-icon"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button class="a-button a-button--default a-button--small has-icon" aria-label="Accept"&gt;&lt;span class="fa fa-check"&gt;&lt;/span&gt;&lt;/button&gt;
     &lt;span class="m-tag__label"&gt;Thomas Edison&lt;/span&gt;
   &lt;/li&gt;
   &lt;li class="m-tag"&gt;
-    &lt;button class="a-button a-button--success a-button--small has-icon"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button class="a-button a-button--success a-button--small has-icon" aria-label="Accept"&gt;&lt;span class="fa fa-check"&gt;&lt;/span&gt;&lt;/button&gt;
     &lt;span class="m-tag__label"&gt;Leonardo da Vinci&lt;/span&gt;
   &lt;/li&gt;
   &lt;li class="m-tag"&gt;
-    &lt;button class="a-button a-button a-button--small has-icon"&gt;&lt;i class="fa fa-arrows"&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button class="a-button a-button a-button--small has-icon" aria-label="Drag"&gt;&lt;span class="fa fa-arrows"&gt;&lt;/span&gt;&lt;/button&gt;
     &lt;span class="m-tag__label"&gt;Albert Einstein&lt;/span&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</code></pre>

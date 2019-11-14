@@ -14,10 +14,6 @@
  * -------------------------------------------------------------------
  */
 
-footer {
-  margin-top: $spacer * 4;
-}
-
 .a-pre {
   margin: 0;
 
@@ -86,13 +82,11 @@ footer {
 }
 
 .d-h1 {
-  background-color: $brand-tertiary;
-  color: $brand-secondary;
   padding-bottom: $spacer;
   padding-top: $spacer * 3.5;
 
   small {
-    color: $white;
+    padding: $spacer-xs / 4 $spacer-xs / 2;
   }
 
   @include at($screen-xs) {
@@ -105,21 +99,31 @@ footer {
   padding-top: $spacer;
 }
 
-.d-h3 {
-  margin-top: $spacer * 2;
-}
-
-.d-h4 {
-  margin-top: $spacer * 2;
-}
-
 .d-file {
-  color: $grey;
+  color: $grey-dark;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: $spacer-xs / 6;
 }
 
 .d-alert {
   margin-top: $spacer / 2;
   padding: $spacer / 2;
+}
+
+.m-alert--wcag {
+  padding-left: $spacer-lg;
+  position: relative;
+
+  &:before {
+    color: $brand-primary;
+    content: '\f29a';
+    font-family: FontAwesome;
+    font-size: rem(20px);
+    left: $spacer-xs;
+    position: absolute;
+    top: $spacer-xs;
+  }
 }
 
 .d-list {
@@ -191,17 +195,32 @@ footer {
   }
 }
 
-.d-spacingutility {
+.d-spacing-utility {
+  background: repeating-linear-gradient(
+    45deg,
+    $white,
+    $white 10px,
+    $grey-lighter 10px,
+    $grey-lighter 20px
+  );
   box-shadow: 0 0 0 1px $grey-light inset;
   display: inline-block;
-  padding: 3px 1px;
+  padding: $spacer / 6;
+
+  strong {
+    background-color: rgba($black-pearl, .6);
+    display: inline-block;
+    padding: rem(1px) rem(4px) rem(2px);
+  }
 }
 
-.d-textutility {
-  &.d-u-text-xlight {
-    background: $grey-light;
-    padding: $spacer / 4;
-  }
+.d-u-text-xlight,
+.d-u-text-warning,
+.d-u-text-tertiary,
+.d-u-text-quinary,
+.d-u-text-senary {
+  background-color: $black;
+  padding: $spacer / 4;
 }
 
 .d-button {
@@ -262,26 +281,6 @@ footer {
 
 .d-avatar {
   margin-top: $spacer-xs / 4;
-}
-
-.d-nav-list {
-  margin-bottom: $spacer * 2;
-}
-
-.d-pagination {
-  margin-bottom: $spacer;
-}
-
-.d-fix-top {
-  margin-top: $spacer * 2;
-
-  &-sm {
-    margin-top: $spacer;
-  }
-}
-
-.d-overlay {
-  margin-bottom: $spacer * 2;
 }
 
 .d-overlay input:checked ~ .m-overlay {
