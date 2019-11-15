@@ -20,6 +20,16 @@
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/styleguide.css" />
 
+    <!-- FAVICONS /////////////////////////////////////////////////////////
+    -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.antwerpen.be/acpaas_branding_favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.antwerpen.be/acpaas_branding_favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.antwerpen.be/acpaas_branding_favicons/favicon-16x16.png">
+    <link rel="manifest" href="https://cdn.antwerpen.be/acpaas_branding_favicons/site.webmanifest">
+    <link rel="mask-icon" href="https://cdn.antwerpen.be/acpaas_branding_favicons/safari-pinned-tab.svg" color="#01afb8">
+    <meta name="msapplication-TileColor" content="#322a56">
+    <meta name="theme-color" content="#322a56">
+
     <!-- SEO /////////////////////////////////////////////////////////
     - http://support.google.com/webmasters/bin/answer.py?hl=nl&answer=79812&topic=2371375&ctx=topic
     - http://www.iacquire.com/blog/18-meta-tags-every-webpage-should-have-in-2013
@@ -60,16 +70,23 @@
 
 </head>
 <body>
-    <header class="o-header"></header>
+    <div role="banner">
+        <header class="o-header" aria-label="Header">
+            <a href="#main-content" class="a-button-negative o-header__button o-header__button-skip">Skip to main content</a>
+            <a href="/" class="o-header__logo" aria-label="ACPaaS branding styleguide">
+                <img src="images/acpaas-logo.svg" alt="Officieel logo ACPaaS">
+            </a>
+        </header>
 
-    <main>
-        <div class="u-wrapper d-h1">
+        <div class="u-wrapper d-h1 u-text-secondary u-bg-tertiary">
             <div class="u-container">
-                <h1>ACPaaS Branding Styleguide <small>v{{ VERSION_INFO.version }}</small></h1>
+                <h1>ACPaaS branding styleguide <small class="u-bg-danger u-text-xlight">v{{ VERSION_INFO.version }}</small></h1>
                 <p class="u-margin-top">A collection of building blocks for your next ACPaaS-based application.</p>
             </div>
         </div>
+    </div>
 
+    <div role="main" id="main-content">
         <div class="d-intro">
             {% include "templates/intro.njk" %}
         </div>
@@ -102,13 +119,13 @@
             {% include "templates/organisms.njk" %}
         </div>
 
-        <footer class="o-footer">
-            <span class="o-footer__label">© 2017 Digipolis</span>
+        <footer class="o-footer u-margin-top-xx">
+            <span class="o-footer__label">© 2019 Digipolis</span>
 
-            <a href="#" class="o-footer__button a-button a-button--secondary has-icon">
-                <i class="fa fa-arrow-up"></i>
+            <a href="#" class="o-footer__button a-button a-button--secondary has-icon" aria-label="Go to top">
+                <span class="fa fa-arrow-up"></span>
             </a>
         </footer>
-    </main>
+    </div>
 </body>
 </html>

@@ -1,8 +1,61 @@
 # Changelog
 
-## [4.0.0] - 2019-xx-xx
+## [4.0.0] - 2019-11-14
+### Added
+- Added a new type of button that can only be used in the header
+- Added the `$header-btn-bg` and `$header-btn-color` variables
+- Added the `$legend-color` and `$legend-size` variables
+- Added the `$switch-disabled-border` and `$switch-disabled-bg` variables
+- Added the `$switch-disabled-label` variable
+- Added the `$upload-disabled-color`, `$upload-disabled-bg` and `$upload-disabled-border` variables
+- Added miscellaneous button variables
+- Added ARIA-labels to empty buttons and anchors
+
 ### Changed
 - [BREAKING] Updated the kit to the new branding
+- [BREAKING] Updated the branding to meet the WCAG 2.1 AA guidelines
+- [BREAKING] Changed the appearance and behaviour of the A logo
+- [BREAKING] Changed the behaviour of the `.u-wrapper` class
+- [BREAKING] Changed the behaviour of the header
+- [BREAKING] Replaced the function of the `$switch-disabled` variable (The previous one is moved to `$switch-disabled-label`)
+- [BREAKING] Updated the syntax of the avatar component
+- [BREAKING] Updated the syntax of icon and social buttons
+- [BREAKING] Updated the syntax of lists with icons
+- [BREAKING] Updated the syntax of the table component
+- [BREAKING] Updated the syntax of the tag components with buttons in it
+- [BREAKING] Updated the syntax of the toggle component
+- [BREAKING] Updated the syntax of the alerts
+- [BREAKING] Updated the syntax of the button list component
+- [BREAKING] Updated the syntax of the datepicker component
+- [BREAKING] Updated the syntax of the pagination component
+- [BREAKING] Updated the syntax of the upload component
+- [BREAKING] Updated the syntax of the header component
+- [BREAKING] Updated the syntax of the tag list component
+- [BREAKING] Added some letterspacing to the label component
+- [BREAKING] Updated the syntax for all icons: `<span>` instead of the incorrect `<i>`
+- changed the behaviour of the a element
+- Made `$grey-dark` slightly darker
+- Made the background of the kbd element darker
+- Updated the appearance of the legend element
+- Updated the appearance of both enabled and disabled form elements
+- Made the background of avatars darker
+- Updated the appearance of the badge component
+- Updated the appearance of most button components
+- Made the border of the different input states darker
+- Updated the appearance of the label component
+- Updated the appearance of the switch component
+- Updated the appearance of the datepicker component
+- Updated the appearance of the navigation components
+- Updated the appearance of the upload component
+- Updated the documentation for the collapsible list component
+- Updated the appearance of the tag component
+
+### Removed
+- [BREAKING] Removed the `$font-size-ti` and `$font-size-xs` variables
+- [BREAKING] Removed the `$font-size-ti` and `$font-size-xs` variables
+- [BREAKING] Removed the ability to make the header fixed
+- [BREAKING] Removed the negative success, warning and danger buttons
+- Removed font-smoothing as it had unexpected results in different browsers
 
 
 ## [3.2.2] - 2019-06-03

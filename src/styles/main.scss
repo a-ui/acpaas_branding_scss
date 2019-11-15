@@ -1,7 +1,7 @@
 @charset 'utf-8';
 
 /**
- * CORE BRANDING STYLES
+ * ACPAAS BRANDING STYLES
  * -------------------------------------------------------------------
  */
 
@@ -10,6 +10,6 @@
 @import 'utilities';
 @import 'atoms';
 @import '@a-ui/core/dist/assets/styles/molecules';
-@import '@a-ui/core/dist/assets/styles/organisms';
+@import 'organisms';
 
-@import '@a-ui/core/dist/assets/styles/aui';
+@import 'aui';

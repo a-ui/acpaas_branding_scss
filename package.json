@@ -1,6 +1,6 @@
 {
   "name": "@a-ui/acpaas",
-  "version": "4.0.0-beta.2",
+  "version": "4.0.0",
   "description": "acpaas_branding_scss",
   "repository": {
     "type": "git",
@@ -17,19 +17,15 @@
     {
       "name": "Jasper Van Proeyen",
       "email": "jasper.vanproeyen@digipolis.be"
-    },
-    {
-      "name": "Tom Wuyts",
-      "email": "tom.wuyts@digipolis.be"
     }
   ],
   "license": "MIT",
   "devDependencies": {
-    "@a-ui/core": "^3.2.2",
+    "@a-ui/core": "^4.0.0",
     "autoprefixer": "^9.5.1",
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.26.7",
     "cssnano": "^4.1.10",
-    "del": "^4.1.1",
+    "del": "^5.1.0",
     "glob": "^7.1.4",
     "gulp": "^4.0.2",
     "gulp-consolidate": "^0.2.0",
@@ -47,7 +43,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-watch": "^5.0.1",
     "list-selectors": "^2.0.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "merge-stream": "^2.0.0",
     "sass-vars-to-js": "^0.8.7",
     "yargs": "^13.2.4"

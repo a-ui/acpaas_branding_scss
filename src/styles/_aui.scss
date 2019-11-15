@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+
+/**
+ * AUI styling for dynamic components
+ * -------------------------------------------------------------------
+ */
+
+@import '@a-ui/core/dist/assets/styles/aui/aui.animation';
+@import '@a-ui/core/dist/assets/styles/aui/aui.cookieconsent';
+@import 'aui/aui.hero';
+@import '@a-ui/core/dist/assets/styles/aui/aui.item-counter';
+@import '@a-ui/core/dist/assets/styles/aui/aui.leaflet';
+@import '@a-ui/core/dist/assets/styles/aui/aui.pane';
+@import '@a-ui/core/dist/assets/styles/aui/aui.range-slider';
+@import '@a-ui/core/dist/assets/styles/aui/aui.search-filter';
+@import '@a-ui/core/dist/assets/styles/aui/aui.sidebar';
+@import '@a-ui/core/dist/assets/styles/aui/aui.statusbar';
+@import '@a-ui/core/dist/assets/styles/aui/aui.table';
+@import '@a-ui/core/dist/assets/styles/aui/aui.timepicker';
+@import '@a-ui/core/dist/assets/styles/aui/aui.upload';
