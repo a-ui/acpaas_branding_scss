@@ -26,6 +26,7 @@ var sass = require('gulp-sass'),
     license = require('gulp-header-license'),
     sassLint = require('gulp-sass-lint');
 
+sass.compiler = require('node-sass');
 
 var cssNano = [
     cssnano({
