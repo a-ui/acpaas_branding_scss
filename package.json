@@ -45,6 +45,7 @@
     "list-selectors": "^2.0.0",
     "lodash": "^4.17.15",
     "merge-stream": "^2.0.0",
+    "node-sass": "^4.13.1",
     "sass-vars-to-js": "^0.8.7",
     "yargs": "^13.2.4"
   }
