@@ -1,9 +1,5 @@
 # Changelog
 
-## Unreleased
-### Changed
-- Updated Sass to v4.13 (compatible with Node 12)
-
 ## [4.0.0] - 2019-11-15
 ### Added
 - Added a new type of button that can only be used in the header
