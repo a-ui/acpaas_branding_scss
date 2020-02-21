@@ -19,6 +19,6 @@ $state-danger: #da291c;
 $header-bg: $brand-secondary;
 $header-border: rgba($black, 0);
 $header-height: calc(3rem + 1px);
-$header-btn-bg: $header-bg !default;
-$header-btn-color: $white !default;
+$header-btn-bg: $header-bg;
+$header-btn-color: $white;
 $icon-list-hover-color: $brand-primary;

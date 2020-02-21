@@ -308,3 +308,20 @@
     margin-bottom: 0;
   }
 }
+
+.d--with-overlay {
+  padding-top: $spacer-lg;
+
+  .o-menu {
+    margin-bottom: -$spacer-xx;
+  }
+
+  @include at($screen-sm){
+    padding-bottom: $spacer-xl;
+    padding-top: 0;
+
+    .o-menu {
+      margin-bottom: 0;
+    }
+  }
+}
