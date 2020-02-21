@@ -76,6 +76,246 @@
             </div>
         </div>
 
+        <a name="organisms-navigation-menu" aria-label="Navigation menu"></a>
+        <h3 class="u-margin-top-lg">Navigation menu</h3>
+        <span class="d-file">aui/aui.navigation-menu</span>
+        <div class="d">
+            <div>
+                <p>
+                    Navigation menu that may be used for global navigation on an application.
+                    Please not that for optimal mobile layouts, the menu should manually be positioned
+                    fixed on the page. For flexibility purposes, this styling is not included in the CSS classes.
+                </p>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="o-menu">
+                    <div class="o-menu__tabs-wrapper">
+                        <div class="o-menu__tab">
+                            <div class="o-menu__tab-wrapper">
+                                <div class="o-menu__tab-header">
+                                    <div class="o-menu__tab-title">
+                                        <span class="o-menu__icon o-menu__tab-icon fa fa-bars"></span>
+                                        <a class="o-menu__link" href="#organisms-navigation-menu">Link A</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="o-menu__tab is-active">
+                            <div class="o-menu__tab-wrapper">
+                                <div class="o-menu__tab-header">
+                                    <div class="o-menu__tab-title">
+                                        <span class="o-menu__icon o-menu__tab-icon fa fa-file"></span>
+                                        <a class="o-menu__link" href="#organisms-navigation-menu">Link B</a>
+                                    </div>
+                                    <span class="o-menu__icon o-menu__submenu-icon fa fa-angle-down"></span>
+                                </div>
+                                <div class="o-menu__submenu is-active">
+                                    <div class="o-menu__submenu-content-wrapper">
+                                        <ul class="m-nav-list">
+                                            <li><a>First Layer A</a></li>
+                                            <li class="is-active">
+                                                <a>First Layer B <span
+                                                    class="o-menu__icon o-menu__submenu-icon fa fa-angle-down"></span></a>
+                                                <div class="o-menu__submenu">
+                                                    <div class="o-menu__submenu-content-wrapper">
+                                                        <ul class="m-nav-list">
+                                                            <li><a>Second Layer A</a></li>
+                                                            <li><a>Second Layer B</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="o-menu__tab">
+                            <div class="o-menu__tab-wrapper">
+                                <div class="o-menu__tab-header">
+                                    <div class="o-menu__tab-title">
+                                        <span class="o-menu__icon o-menu__tab-icon fa fa-bars"></span>
+                                        <a class="o-menu__link" href="#organisms-navigation-menu">Link C</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="o-menu__hide-cta">
+                        <a href="#organisms-navigation-menu">Hide Menu <span class="fa fa-angle-double-left"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class=&quot;o-menu&quot;&gt;
+    &lt;div class=&quot;o-menu__tabs-wrapper&quot;&gt;
+        &lt;div class=&quot;o-menu__tab&quot;&gt;
+            &lt;div class=&quot;o-menu__tab-wrapper&quot;&gt;
+                &lt;div class=&quot;o-menu__tab-header&quot;&gt;
+                    &lt;div class=&quot;o-menu__tab-title&quot;&gt;
+                        &lt;span class=&quot;o-menu__icon o-menu__tab-icon fa fa-bars&quot;&gt;&lt;/span&gt;
+                        &lt;a class=&quot;o-menu__link&quot; href=&quot;#organisms-navigation-menu&quot;&gt;Link A&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;o-menu__tab is-active&quot;&gt;
+            &lt;div class=&quot;o-menu__tab-wrapper&quot;&gt;
+                &lt;div class=&quot;o-menu__tab-header&quot;&gt;
+                    &lt;div class=&quot;o-menu__tab-title&quot;&gt;
+                        &lt;span class=&quot;o-menu__icon o-menu__tab-icon fa fa-file&quot;&gt;&lt;/span&gt;
+                        &lt;a class=&quot;o-menu__link&quot; href=&quot;#organisms-navigation-menu&quot;&gt;Link B&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;span class=&quot;o-menu__icon o-menu__submenu-icon fa fa-angle-down&quot;&gt;&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;o-menu__submenu is-active&quot;&gt;
+                    &lt;div class=&quot;o-menu__submenu-content-wrapper&quot;&gt;
+                        &lt;ul class=&quot;m-nav-list&quot;&gt;
+                            &lt;li&gt;&lt;a&gt;First Layer A&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;is-active&quot;&gt;
+                                &lt;a&gt;First Layer B &lt;span class=&quot;o-menu__icon o-menu__submenu-icon fa fa-angle-down&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                                &lt;div class=&quot;o-menu__submenu&quot;&gt;
+                                    &lt;div class=&quot;o-menu__submenu-content-wrapper&quot;&gt;
+                                        &lt;ul class=&quot;m-nav-list&quot;&gt;
+                                            &lt;li&gt;&lt;a&gt;Second Layer A&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a&gt;Second Layer B&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;o-menu__tab&quot;&gt;
+            &lt;div class=&quot;o-menu__tab-wrapper&quot;&gt;
+                &lt;div class=&quot;o-menu__tab-header&quot;&gt;
+                    &lt;div class=&quot;o-menu__tab-title&quot;&gt;
+                        &lt;span class=&quot;o-menu__icon o-menu__tab-icon fa fa-bars&quot;&gt;&lt;/span&gt;
+                        &lt;a class=&quot;o-menu__link&quot; href=&quot;#organisms-navigation-menu&quot;&gt;Link C&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;o-menu__hide-cta&quot;&gt;
+        &lt;a href=&quot;#organisms-navigation-menu&quot;&gt;Hide Menu &lt;span class=&quot;fa fa-angle-double-left&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                </code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>The Navigation Menu may also be 'docked'. This is achieved by only adding the <code>is-docked</code>
+            class to the <code>o-menu</code> element. Docked behaviour is only relevant for desktop layouts.</div>
+        </div>
+        <div class="d d--with-overlay">
+            <div>
+                <div class="o-menu is-docked">
+                    <div class="o-menu__tabs-wrapper">
+                        <div class="o-menu__tab">
+                            <div class="o-menu__tab-wrapper">
+                                <div class="o-menu__tab-header">
+                                    <div class="o-menu__tab-title">
+                                        <span class="o-menu__icon o-menu__tab-icon fa fa-bars"></span>
+                                        <a class="o-menu__link" href="#organisms-navigation-menu">Link A</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="o-menu__tab is-active">
+                            <div class="o-menu__tab-wrapper">
+                                <div class="o-menu__tab-header">
+                                    <div class="o-menu__tab-title">
+                                        <span class="o-menu__icon o-menu__tab-icon fa fa-file"></span>
+                                        <a class="o-menu__link" href="#organisms-navigation-menu">Link B</a>
+                                    </div>
+                                    <span class="o-menu__icon o-menu__submenu-icon fa fa-angle-down"></span>
+                                </div>
+                                <div class="o-menu__submenu is-active">
+                                    <div class="o-menu__submenu-content-wrapper">
+                                        <ul class="m-nav-list">
+                                            <li><a>First Layer A</a></li>
+                                            <li class="is-active">
+                                                <a>First Layer B <span
+                                                    class="o-menu__icon o-menu__submenu-icon fa fa-angle-down"></span></a>
+                                                <div class="o-menu__submenu">
+                                                    <div class="o-menu__submenu-content-wrapper">
+                                                        <ul class="m-nav-list">
+                                                            <li><a>Second Layer A</a></li>
+                                                            <li><a>Second Layer B</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="o-menu__tab">
+                            <div class="o-menu__tab-wrapper">
+                                <div class="o-menu__tab-header">
+                                    <div class="o-menu__tab-title">
+                                        <span class="o-menu__icon o-menu__tab-icon fa fa-bars"></span>
+                                        <a class="o-menu__link" href="#organisms-navigation-menu">Link C</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="o-menu__hide-cta">
+                        <a href="#organisms-navigation-menu"><span class="fa fa-angle-double-right"></span></a>
+                    </div>
+                    <!-- We override the default position on purpose for the demo, we don't want it floating in absolute position -->
+                    <div class="o-menu__navigation-pane is-visible" style="position: static">
+
+                        <div class="o-navigation-pane__wrapper u-bg-white">
+                            <div class="o-menu__main-submenu">
+                                <ul class="m-nav-list m-nav-list--left">
+                                    <li><a>one</a></li>
+                                    <li><a>Two</a></li>
+                                </ul>
+                            </div>
+                            <div class="o-menu__slide-in-submenu is-visible">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class=&quot;o-menu is-docked&quot;&gt;
+    &lt;!-- Exactly the same markup as the first example --&gt;
+&lt;/div&gt;
+                 </code></pre>
+            </div>
+        </div>
+        <!-- Padding for making up for the menu that is positioned absolute -->
+        <div class="d">
+            <div>
+                <p>Additionally, the styling classes include utility classes for creating a panel
+                that will overlay the whole page, designed to contain a Navigation list. The use
+                is intended for mobile only.</p>
+                <p class="u-margin-top">Use the <code>is-visible</code> class on the <code>o-menu__slide-in-submenu</code> to create an animation
+                    where the second menu slides from the right over the first menu.</p>
+            </div>
+            <div>
+                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class=&quot;o-menu__navigation-pane is-visible&quot;&gt;
+    &lt;div class=&quot;o-navigation-pane__overlay&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;o-navigation-pane__wrapper&quot;&gt;
+        &lt;div class=&quot;o-menu__main-submenu&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;o-menu__slide-in-submenu is-visible&quot;&gt; &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+                 </code></pre>
+            </div>
+        </div>
+
         <a name="organisms-slideshow" aria-label="Slideshow"></a>
         <h3 class="u-margin-top-lg">Slideshow</h3>
         <h4 class="u-margin-top-lg">Regular slideshow</h4>
