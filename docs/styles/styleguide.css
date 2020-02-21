@@ -440,6 +440,11 @@
  */
 
 /**
+ * NAVIGATION MENU
+ * -------------------------------------------------------------------
+ */
+
+/**
  * CUSTOM STYLING FOR STYLEGUIDE
  * -------------------------------------------------------------------
  */
@@ -676,6 +681,14 @@
 	margin-bottom: 0;
 }
 
+.d--with-overlay {
+	padding-top: 3rem;
+}
+
+.d--with-overlay .o-menu {
+	margin-bottom: -6rem;
+}
+
 @media screen and (min-width: 30rem) {
 
 .d-h1 {
@@ -712,6 +725,15 @@
 }
 
 .d-overlay input:checked ~ .m-overlay label {
+	margin-bottom: 0;
+}
+
+.d--with-overlay {
+	padding-bottom: 3.75rem;
+	padding-top: 0;
+}
+
+.d--with-overlay .o-menu {
 	margin-bottom: 0;
 }
 
