@@ -1,5 +1,10 @@
 # Changelog
 
+## [4.1.1] - 2020-03-02
+### Fixed
+- Fixed an issue where checkboxes and radio buttons could move out of bounds
+
+
 ## [4.1.0] - 2020-02-21
 ### Added
 - Added a new navigation component
@@ -147,6 +152,7 @@
 - Initial release.
 
 
+[4.1.1]: https://github.com/a-ui/acpaas_branding_scss/tree/v4.1.1
 [4.1.0]: https://github.com/a-ui/acpaas_branding_scss/tree/v4.1.0
 [4.0.0]: https://github.com/a-ui/acpaas_branding_scss/tree/v4.0.0
 [3.2.2]: https://github.com/a-ui/acpaas_branding_scss/tree/v3.2.2
