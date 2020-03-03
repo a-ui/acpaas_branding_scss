@@ -2807,7 +2807,9 @@ textarea:focus {
 
 .a-input__checkbox input,
 .a-input__radio input {
+	min-height: 0;
 	opacity: 0;
+	width: auto;
 }
 
 .a-input__checkbox input:focus + label:after,
