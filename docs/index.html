@@ -80,7 +80,7 @@
 
         <div class="u-wrapper d-h1 u-text-secondary u-bg-tertiary">
             <div class="u-container">
-                <h1>ACPaaS branding styleguide <small class="u-bg-danger u-text-xlight">v4.1.1</small></h1>
+                <h1>ACPaaS branding styleguide <small class="u-bg-danger u-text-xlight">v4.2.0</small></h1>
                 <p class="u-margin-top">A collection of building blocks for your next ACPaaS-based application.</p>
             </div>
         </div>
@@ -102,9 +102,9 @@
 
             <h3 class="h5 has-base-font u-text-bold u-margin-top-lg">Basic implementation</h3>
             <p class="u-margin-top u-margin-bottom-xs">In its simplest form you can just include the following line in the <code>&lt;head&gt;</code> section of your app.</p>
-            <pre class="a-pre a-pre--scrollable"><code>&lt;link rel="stylesheet" href="https://cdn.antwerpen.be/acpaas_branding_scss/4.1.1/main.min.css"&gt;</code></pre>
+            <pre class="a-pre a-pre--scrollable"><code>&lt;link rel="stylesheet" href="https://cdn.antwerpen.be/acpaas_branding_scss/4.2.0/main.min.css"&gt;</code></pre>
             <p class="u-margin-top u-margin-bottom-xs">You can even import it directly in your (S)CSS:</p>
-            <pre class="a-pre a-pre--scrollable"><code>@import url("https://cdn.antwerpen.be/acpaas_branding_scss/4.1.1/main.min.css");</code></pre>
+            <pre class="a-pre a-pre--scrollable"><code>@import url("https://cdn.antwerpen.be/acpaas_branding_scss/4.2.0/main.min.css");</code></pre>
             <div class="m-alert d-alert u-margin-top">
                 <p>We adopt semantic versioning. If you want to use another version of the Core Branding you can do so by adjusting the version in the URL address. See the changelog for all available versions.</p>
             </div>
@@ -224,6 +224,7 @@
 		<div class="d-toc__cell">
 			<h3 class="h5 has-base-font u-text-bold u-margin-bottom-xs">Organisms</h3>
 			<ul class="a-list a-list--unstyled a-list__toc">
+                <li><a href="#organisms-article">Article</a></li>
 				<li><a href="#organisms-footer">Footer</a></li>
 				<li><a href="#organisms-header">Header</a></li>
                 <li><a href="#organisms-navigation-menu">Navigation menu</a></li>
@@ -684,7 +685,7 @@
                         </li>
                     
                         <li class="d-header-btn-color">
-                            <code>$header-btn-color</code>: 
+                            <code>$header-btn-color</code>: #fff
                         </li>
                     
                         <li class="d-icon-list-hover-color">
@@ -6745,6 +6746,76 @@
     </div>
 </div>
 <div class="u-wrapper">
+    <div class="u-container">
+        <a name="organisms-article" aria-label="Article"></a>
+        <h3 class="u-margin-top-lg">Article</h3>
+        <span class="d-file">organisms/organisms.article</span>
+        <div class="d">
+            <div>
+                <p>Use this wrapper class to style basic html tags without any extra classes.</p>
+            </div>
+        </div>
+        <div class="d">
+            <div class="o-article">
+                <h1>Heading 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2>Heading 2</h2>
+                <ul>
+                    <li>Lorem ipsum dolor</li>
+                    <li>sit:
+                        <ul>
+                            <li>amet</li>
+                            <li>consectetur</li>
+                        </ul>
+                    </li>
+                    <li>adipisicing elit</li>
+                </ul>
+                <h3>Heading 3</h3>
+                <ol>
+                    <li>Lorem ipsum dolor</li>
+                    <li>sit:
+                        <ul>
+                            <li>amet</li>
+                            <li>consectetur</li>
+                        </ul>
+                    </li>
+                    <li>adipisicing elit</li>
+                </ol>
+                <h4>Heading 4</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h5>Heading 5</h5>
+                <ul>
+                    <li>Lorem ipsum dolor</li>
+                    <li>sit:
+                        <ul>
+                            <li>amet</li>
+                            <li>consectetur</li>
+                        </ul>
+                    </li>
+                    <li>adipisicing elit</li>
+                </ul>
+                <h6>Heading 6</h6>
+                <ol>
+                    <li>Lorem ipsum dolor</li>
+                    <li>sit:
+                        <ul>
+                            <li>amet</li>
+                            <li>consectetur</li>
+                        </ul>
+                    </li>
+                    <li>adipisicing elit</li>
+                </ol>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="o-article"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+    </div>
+
     <div class="u-container">
         <a name="organisms-footer" aria-label="Footer"></a>
         <h3 class="u-margin-top-lg">Footer</h3>
