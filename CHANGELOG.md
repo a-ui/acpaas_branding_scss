@@ -1,5 +1,11 @@
 # Changelog
 
+## [4.2.1] - 2020-09-22
+
+### Fixed
+- Fixed a margin issue when an article organism would contain multiple nested levels
+
+
 ## [4.2.0] - 2020-09-16
 ### Added
 - Added an article organism that automatically styles basic html text elements
@@ -162,6 +168,7 @@
 - Initial release.
 
 
+[4.2.1]: https://github.com/a-ui/acpaas_branding_scss/tree/v4.2.1
 [4.2.0]: https://github.com/a-ui/acpaas_branding_scss/tree/v4.2.0
 [4.1.1]: https://github.com/a-ui/acpaas_branding_scss/tree/v4.1.1
 [4.1.0]: https://github.com/a-ui/acpaas_branding_scss/tree/v4.1.0
