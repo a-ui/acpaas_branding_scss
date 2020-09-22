@@ -5601,7 +5601,7 @@ dl {
 	margin: 0 0 0.375rem;
 }
 
-.o-article *:first-child {
+.o-article > :first-child {
 	margin-top: 0;
 }
 
