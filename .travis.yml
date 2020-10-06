@@ -12,6 +12,7 @@ deploy:
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: $AWS_BUCKET
   local_dir: dist
+  cache_control: "max-age=31536000"
   on:
     tags: true
   skip_cleanup: true
