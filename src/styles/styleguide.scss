@@ -177,6 +177,21 @@
       }
     }
   }
+
+  &__antwerpen-icons {
+    > li {
+      margin-bottom: $spacer-xs;
+
+      > span {
+        line-height: .75;
+        position: absolute;
+      }
+
+      > pre {
+        margin-left: $spacer-lg + $spacer-xs;
+      }
+    }
+  }
 }
 
 .d-font {
@@ -324,4 +339,9 @@
       margin-bottom: 0;
     }
   }
+}
+
+.hljs {
+  overflow-y: hidden;
+  padding: 0;
 }

@@ -8,36 +8,36 @@
 <div class="u-wrapper">
     <div class="u-container u-margin-top d-intro">
         <div class="u-margin-bottom-lg">
-            <p>In this styleguide you'll find all the necessary info you will need in order to start building digital layouts or apps for the city of Antwerp.</p>
+            <p>In this styleguide you'll find all the necessary info you will need in order to start building digital layouts or ACPaaS apps.</p>
 
             <h3 class="h5 has-base-font u-text-bold u-margin-top-lg">Basic implementation</h3>
             <p class="u-margin-top u-margin-bottom-xs">In its simplest form you can just include the following line in the <code>&lt;head&gt;</code> section of your app.</p>
-            <pre class="a-pre a-pre--scrollable"><code>&lt;link rel="stylesheet" href="https://cdn.antwerpen.be/acpaas_branding_scss/{{ VERSION_INFO.version }}/main.min.css"&gt;</code></pre>
+            <pre class="a-pre a-pre--scrollable"><code class="html">&lt;link rel="stylesheet" href="https://cdn.antwerpen.be/acpaas_branding_scss/{{ VERSION_INFO.version }}/main.min.css"&gt;</code></pre>
             <p class="u-margin-top u-margin-bottom-xs">You can even import it directly in your (S)CSS:</p>
-            <pre class="a-pre a-pre--scrollable"><code>@import url("https://cdn.antwerpen.be/acpaas_branding_scss/{{ VERSION_INFO.version }}/main.min.css");</code></pre>
+            <pre class="a-pre a-pre--scrollable"><code class="scss">@import url("https://cdn.antwerpen.be/acpaas_branding_scss/{{ VERSION_INFO.version }}/main.min.css");</code></pre>
             <div class="m-alert d-alert u-margin-top">
                 <p>We adopt semantic versioning. If you want to use another version of the Core Branding you can do so by adjusting the version in the URL address. See the changelog for all available versions.</p>
             </div>
             <p class="u-margin-top u-margin-bottom-xs">You can also install everything with npm:</p>
-            <pre class="a-pre a-pre--scrollable"><code>npm install @a-ui/acpaas --save</code></pre>
+            <pre class="a-pre a-pre--scrollable"><code class="bash">npm install @a-ui/acpaas --save</code></pre>
             <p class="u-margin-top u-margin-bottom-xs">Then, you can import everything in your Sass setup (<code>main.min.css</code> also available):</p>
-            <pre class="a-pre a-pre--scrollable"><code>@import '~@a-ui/acpaas/dist/main.css';</code></pre>
+            <pre class="a-pre a-pre--scrollable"><code class="scss">@import '~@a-ui/acpaas/dist/main.css';</code></pre>
             <p class="u-margin-top u-margin-bottom-xs">In order to extend our style kit you can make use of our Sass variables. Import them like this:</p>
-            <pre class="a-pre a-pre--scrollable"><code>@import '~@a-ui/acpaas/dist/assets/styles/_quarks';</code></pre>
+            <pre class="a-pre a-pre--scrollable"><code class="scss">@import '~@a-ui/acpaas/dist/assets/styles/_quarks';</code></pre>
 
             <h3 class="h5 has-base-font u-text-bold u-margin-top-lg">Advanced usage</h3>
             <p class="u-margin-top u-margin-bottom-xs">Sometimes you want to add functionality which requires more styling as defined in our kit. In order to help with this we provide some simple tools and the ability to import all the kit's Sass variables. See the <a href="#quarks">Quarks</a> section for more info.</p>
 
             <h2 class="u-margin-top-lg">Accessibility</h2>
-            <p class="u-margin-top u-margin-bottom-xs"><a href="https://www.w3.org/TR/WCAG21/" title="Web Content Accessibility Guidelines (WCAG) 2.1" target="_blank" class="has-icon-right">Web Content Accessibility Guidelines (WCAG) 2.1<span class="fa fa-external-link"></span></a> cover a wide range of recommendations for making web content more accessible.</p>
-            <p class="u-margin-top-xs u-margin-bottom-xs">Some parts of the ACPaaS branding may need special actions on the subject of WCAG 2.1 AA, specific guidelines that are required by European law. When this is the case you will see this icon <span class="fa fa-universal-access u-text-primary"></span> which will warn you about any incompatibilities and actions that may have to be taken from your behalf.</p>
+            <p class="u-margin-top u-margin-bottom-xs"><a href="https://www.w3.org/TR/WCAG21/" title="Web Content Accessibility Guidelines (WCAG) 2.1" target="_blank" class="has-icon-right">Web Content Accessibility Guidelines (WCAG) 2.1<span class="fa fa-external-link" aria-hidden="true"></span><span class="u-screen-reader-only"> (external)</span></a> cover a wide range of recommendations for making web content more accessible.</p>
+            <p class="u-margin-top-xs u-margin-bottom-xs">Some parts of the ACPaaS branding may need special actions on the subject of WCAG 2.1 AA, specific guidelines that are required by European law. When this is the case you will see this icon <span class="fa fa-universal-access u-text-primary"><span class="u-screen-reader-only">accessibility note</span></span> which will warn you about any incompatibilities and actions that may have to be taken from your behalf.</p>
 
             <h2 class="u-margin-top-lg">Other resources</h2>
             <h3 class="h5 has-base-font u-text-bold u-margin-top">Flexboxgrid</h3>
-            <p class="u-margin-top-xs u-margin-bottom-xs"><a href="https://github.com/a-ui/core_flexboxgrid_scss" title="a-ui/core_flexboxgrid_scss: Grid optimized to follow the ACPaaS styling guidelines." target="_blank" class="has-icon-right">https://github.com/a-ui/core_flexboxgrid_scss<span class="fa fa-external-link"></span></a></p>
-            <p class="u-margin-bottom">Grid optimized to follow the Antwerp styling guidelines.</p>
+            <p class="u-margin-top-xs u-margin-bottom-xs"><a href="https://github.com/a-ui/core_flexboxgrid_scss" title="a-ui/core_flexboxgrid_scss: Grid optimized to follow the ACPaaS styling guidelines." target="_blank" class="has-icon-right">https://github.com/a-ui/core_flexboxgrid_scss<span class="fa fa-external-link" aria-hidden="true"></span><span class="u-screen-reader-only"> (external)</span></a></p>
+            <p class="u-margin-bottom">Grid optimized to follow the ACPaaS styling guidelines.</p>
             <h3 class="h5 has-base-font u-text-bold u-margin-top">Favicons</h3>
-            <p class="u-margin-top-xs u-margin-bottom-xs"><a href="https://github.com/a-ui/acpaas_branding_favicons" title="a-ui/acpaas_branding_favicons: Favicons for Antwerp apps." target="_blank" class="has-icon-right">https://github.com/a-ui/acpaas_branding_favicons<span class="fa fa-external-link"></span></a></p>
+            <p class="u-margin-top-xs u-margin-bottom-xs"><a href="https://github.com/a-ui/acpaas_branding_favicons" title="a-ui/acpaas_branding_favicons: Favicons for ACPaaS apps." target="_blank" class="has-icon-right">https://github.com/a-ui/acpaas_branding_favicons<span class="fa fa-external-link" aria-hidden="true"></span><span class="u-screen-reader-only"> (external)</span></a></p>
             <p class="u-margin-bottom">Favicons for ACPaaS apps.</p>
         </div>
     </div>

@@ -18,9 +18,9 @@ gulp.task('clean:docs', function () {
     return del(['docs']);
 });
 
-gulp.task('clean:travis', function () {
+gulp.task('clean:aws', function () {
     return del([
         'dist/*',
-        '!dist/travis'
+        '!dist/aws'
     ]);
 });
