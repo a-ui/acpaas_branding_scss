@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
     "start": "gulp server",
-    "travis": "gulp travis",
+    "aws": "gulp aws",
     "version": "gulp docs && git add -A ."
   },
   "contributors": [
@@ -20,8 +20,15 @@
     }
   ],
   "license": "MIT",
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead",
+    "IE 11"
+  ],
   "devDependencies": {
-    "@a-ui/core": "^4.2.2",
+    "@a-ui/core": "^4.3.0",
     "autoprefixer": "^9.5.1",
     "browser-sync": "^2.26.12",
     "cssnano": "^4.1.10",

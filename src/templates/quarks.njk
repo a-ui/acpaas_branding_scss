@@ -11,7 +11,7 @@
                 <p>You can treat this part of the package as the API of our styling library. Include it on top of your custom stylesheet in order to have access to all defined variables, mixins and functions.</p>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>@import 'quarks';</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="scss">@import 'quarks';</code></pre>
             </div>
         </div>
 
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>.css {
+                <pre class="a-pre a-pre--scrollable"><code class="scss">.css {
   @include clearfix;
 }</code></pre>
             </div>
@@ -43,7 +43,7 @@
                 <p>Use FontAwesome as font</p>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>.css {
+                <pre class="a-pre a-pre--scrollable"><code class="scss">.css {
   @include fontawesome;
 }</code></pre>
             </div>
@@ -56,7 +56,7 @@
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>.css {
+                <pre class="a-pre a-pre--scrollable"><code class="scss">.css {
   @include at($screen) {
     /* Anything bigger than $screen */
   }
@@ -83,7 +83,7 @@
                 <p>Strip unit from value</p>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>.css {
+                <pre class="a-pre a-pre--scrollable"><code class="scss">.css {
   margin: strip-unit(32px) / 16 * 1rem // margin: 2rem;
 }</code></pre>
             </div>
@@ -93,7 +93,7 @@
                 <p>Convert pixels to rem</p>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>.css {
+                <pre class="a-pre a-pre--scrollable"><code class="scss">.css {
   margin: rem(32px) / 16 * 1rem // margin: 2rem;
 }</code></pre>
             </div>
@@ -103,7 +103,7 @@
                 <p>Raise number to certain power</p>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>.css {
+                <pre class="a-pre a-pre--scrollable"><code class="scss">.css {
   font-size: power($font-size-ratio, 6) // font-size: 48px;
 }</code></pre>
             </div>
@@ -116,7 +116,7 @@
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>.css {
+                <pre class="a-pre a-pre--scrollable"><code class="scss">.css {
   z-index: layer('base'); // z-index: 1;
 }</code></pre>
             </div>
@@ -133,12 +133,12 @@
                 <ul class="a-list--unstyled d-list d-list__colors">
                     {% for name, value  in COLORS %}
                         <li class="d-{{ name | escape }}">
-                            <span class="d-color" style="background: {{ value }}"></span>
+                            <span class="d-color" style="background: {{ value }}" aria-hidden="true"></span>
                             <code>${{ name }}</code><br /><span>{{ value }}</span></small>
                         </li>
                     {% endfor %}
                     <li class="d-instagram">
-                        <span class="d-color" style="background: radial-gradient(circle farthest-corner at 32% 106%, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%, transparent 82%), linear-gradient(135deg, #234bd7 12%, #c33cbe 58%)"></span>
+                        <span class="d-color" style="background: radial-gradient(circle farthest-corner at 32% 106%, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%, transparent 82%), linear-gradient(135deg, #234bd7 12%, #c33cbe 58%)" aria-hidden="true"></span>
                             <code>$instagram</code><br /><span class="u-text-light">inspect me</span></small>
                     </li>
                 </ul>

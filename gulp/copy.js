@@ -39,7 +39,7 @@ gulp.task('copy:docs', function() {
 
 });
 
-gulp.task('copy:travis', function() {
+gulp.task('copy:aws', function() {
     return gulp.src('dist/**/*')
-        .pipe(gulp.dest('dist/travis'));
+        .pipe(gulp.dest('dist/aws'));
 });

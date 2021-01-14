@@ -67,7 +67,7 @@
                 </ol>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="o-article"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="o-article"&gt;
   ...
 &lt;/div&gt;</code></pre>
             </div>
@@ -83,32 +83,37 @@
                 <p>For a visible example of the footer, take a look at the very bottom of this page.</p>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>&lt;footer class="o-footer"&gt;
-  &lt;span class="o-footer__label"&gt;© 2019 Digipolis&lt;/span&gt;
-  &lt;a href="#" class="o-footer__button a-button a-button--secondary has-icon"&gt;
-    &lt;span class="fa fa-arrow-up"&gt;&lt;/span&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;footer class="o-footer"&gt;
+  &lt;span class="o-footer__label"&gt;© stad Antwerpen&lt;/span&gt;
+  &lt;a href="#" class="o-footer__button a-button a-button--secondary has-icon" aria-label="Go back to top"&gt;
+    &lt;span class="fa fa-arrow-up" aria-hidden="true"&gt;&lt;/span&gt;
   &lt;/a&gt;
 &lt;/footer&gt;</code></pre>
             </div>
         </div>
+    </div>
 
+    <div class="u-container">
         <a name="organisms-header" aria-label="Header"></a>
         <h3 class="u-margin-top-lg">Header</h3>
         <span class="d-file">organisms/organisms.header</span>
+        <div class="m-alert d-alert m-alert--wcag">
+            <p><span class="u-screen-reader-only">Accessibility note. </span>Don't forget to assign the id="main-content" to an element at the beginning of the content for the skiplink to work. For example, the <code>&lt;h1&gt;</code> or <code>&lt;main&gt;</code>.</p>
+        </div>
         <div class="d">
             <div>
                 <header class="o-header u-margin-bottom-xx" aria-label="Demo header">
                     <a href="#main-content" class="a-button-negative o-header__button o-header__button-skip">Skip to main content</a>
                     <a href="javascript:void(0);" class="o-header__logo">
-                        <img src="images/acpaas-logo.svg" alt="Officieel logo ACPaaS">
+                        <img src="images/acpaas-logo.svg" alt="Homepage ACPaaS.">
                     </a>
                 </header>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>&lt;header class="o-header"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;header class="o-header"&gt;
   &lt;a href="#main-content" class="a-button-negative o-header__button o-header__button-skip"&gt;Skip to main content&lt;/a&gt;
   &lt;a href="#" class="o-header__logo"&gt;
-    &lt;img src="images/acpaas-logo.svg" alt="Official logo ACPaaS"&gt;
+    &lt;img src="images/acpaas-logo.svg" alt="Homepage ACPaaS."&gt;
   &lt;/a&gt;
 &lt;/header&gt;</code></pre>
             </div>
@@ -120,7 +125,7 @@
                         <div class="o-header__content">
                             <a href="#main-content" class="a-button-negative o-header__button o-header__button-skip">Skip to main content</a>
                             <a href="javascript:void(0);" class="o-header__logo">
-                                <img src="images/acpaas-logo.svg" alt="Officieel logo ACPaaS">
+                                <img src="images/acpaas-logo.svg" alt="Homepage ACPaaS.">
                             </a>
                         </div>
                         <div class="o-header__menu-items">
@@ -130,12 +135,12 @@
                 </header>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>&lt;header class="o-header"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;header class="o-header"&gt;
   &lt;div class="o-header__content-wrapper"&gt;
     &lt;div class="o-header__content"&gt;
       &lt;a href="#main-content" class="a-button-negative o-header__button o-header__button-skip"&gt;Skip to main content&lt;/a&gt;
       &lt;a href="#" class="o-header__logo"&gt;
-        &lt;img src="images/acpaas-logo.svg" alt="Officieel logo ACPaaS"&gt;
+        &lt;img src="images/acpaas-logo.svg" alt="Homepage ACPaaS."&gt;
       &lt;/a&gt;
     &lt;/div&gt;
     &lt;div class="o-header__menu-items"&gt;
@@ -145,7 +150,9 @@
 &lt;/header&gt;</code></pre>
             </div>
         </div>
+    </div>
 
+    <div class="u-container">
         <a name="organisms-navigation-menu" aria-label="Navigation menu"></a>
         <h3 class="u-margin-top-lg">Navigation menu</h3>
         <span class="d-file">aui/aui.navigation-menu</span>
@@ -166,7 +173,7 @@
                             <div class="o-menu__tab-wrapper">
                                 <div class="o-menu__tab-header">
                                     <div class="o-menu__tab-title">
-                                        <span class="o-menu__icon o-menu__tab-icon fa fa-bars"></span>
+                                        <span class="o-menu__icon o-menu__tab-icon fa fa-bars" aria-hidden="true"></span>
                                         <a class="o-menu__link" href="#organisms-navigation-menu">Link A</a>
                                     </div>
                                 </div>
@@ -176,10 +183,10 @@
                             <div class="o-menu__tab-wrapper">
                                 <div class="o-menu__tab-header">
                                     <div class="o-menu__tab-title">
-                                        <span class="o-menu__icon o-menu__tab-icon fa fa-file"></span>
+                                        <span class="o-menu__icon o-menu__tab-icon fa fa-file" aria-hidden="true"></span>
                                         <a class="o-menu__link" href="#organisms-navigation-menu">Link B</a>
                                     </div>
-                                    <span class="o-menu__icon o-menu__submenu-icon fa fa-angle-down"></span>
+                                    <span class="o-menu__icon o-menu__submenu-icon fa fa-angle-down" aria-hidden="true"></span>
                                 </div>
                                 <div class="o-menu__submenu is-active">
                                     <div class="o-menu__submenu-content-wrapper">
@@ -187,7 +194,7 @@
                                             <li><a>First Layer A</a></li>
                                             <li class="is-active">
                                                 <a>First Layer B <span
-                                                    class="o-menu__icon o-menu__submenu-icon fa fa-angle-down"></span></a>
+                                                    class="o-menu__icon o-menu__submenu-icon fa fa-angle-down" aria-hidden="true"></span></a>
                                                 <div class="o-menu__submenu">
                                                     <div class="o-menu__submenu-content-wrapper">
                                                         <ul class="m-nav-list">
@@ -206,7 +213,7 @@
                             <div class="o-menu__tab-wrapper">
                                 <div class="o-menu__tab-header">
                                     <div class="o-menu__tab-title">
-                                        <span class="o-menu__icon o-menu__tab-icon fa fa-bars"></span>
+                                        <span class="o-menu__icon o-menu__tab-icon fa fa-bars" aria-hidden="true"></span>
                                         <a class="o-menu__link" href="#organisms-navigation-menu">Link C</a>
                                     </div>
                                 </div>
@@ -214,12 +221,12 @@
                         </div>
                     </div>
                     <div class="o-menu__hide-cta">
-                        <a href="#organisms-navigation-menu">Hide Menu <span class="fa fa-angle-double-left"></span></a>
+                        <a href="#organisms-navigation-menu">Hide Menu <span class="fa fa-angle-double-left" aria-hidden="true"></span></a>
                     </div>
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>&lt;div class=&quot;o-menu&quot;&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class=&quot;o-menu&quot;&gt;
     &lt;div class=&quot;o-menu__tabs-wrapper&quot;&gt;
         &lt;div class=&quot;o-menu__tab&quot;&gt;
             &lt;div class=&quot;o-menu__tab-wrapper&quot;&gt;
@@ -290,7 +297,7 @@
                             <div class="o-menu__tab-wrapper">
                                 <div class="o-menu__tab-header">
                                     <div class="o-menu__tab-title">
-                                        <span class="o-menu__icon o-menu__tab-icon fa fa-bars"></span>
+                                        <span class="o-menu__icon o-menu__tab-icon fa fa-bars" aria-hidden="true"></span>
                                         <a class="o-menu__link" href="#organisms-navigation-menu">Link A</a>
                                     </div>
                                 </div>
@@ -300,10 +307,10 @@
                             <div class="o-menu__tab-wrapper">
                                 <div class="o-menu__tab-header">
                                     <div class="o-menu__tab-title">
-                                        <span class="o-menu__icon o-menu__tab-icon fa fa-file"></span>
+                                        <span class="o-menu__icon o-menu__tab-icon fa fa-file" aria-hidden="true"></span>
                                         <a class="o-menu__link" href="#organisms-navigation-menu">Link B</a>
                                     </div>
-                                    <span class="o-menu__icon o-menu__submenu-icon fa fa-angle-down"></span>
+                                    <span class="o-menu__icon o-menu__submenu-icon fa fa-angle-down" aria-hidden="true"></span>
                                 </div>
                                 <div class="o-menu__submenu is-active">
                                     <div class="o-menu__submenu-content-wrapper">
@@ -311,7 +318,7 @@
                                             <li><a>First Layer A</a></li>
                                             <li class="is-active">
                                                 <a>First Layer B <span
-                                                    class="o-menu__icon o-menu__submenu-icon fa fa-angle-down"></span></a>
+                                                    class="o-menu__icon o-menu__submenu-icon fa fa-angle-down" aria-hidden="true"></span></a>
                                                 <div class="o-menu__submenu">
                                                     <div class="o-menu__submenu-content-wrapper">
                                                         <ul class="m-nav-list">
@@ -330,7 +337,7 @@
                             <div class="o-menu__tab-wrapper">
                                 <div class="o-menu__tab-header">
                                     <div class="o-menu__tab-title">
-                                        <span class="o-menu__icon o-menu__tab-icon fa fa-bars"></span>
+                                        <span class="o-menu__icon o-menu__tab-icon fa fa-bars" aria-hidden="true"></span>
                                         <a class="o-menu__link" href="#organisms-navigation-menu">Link C</a>
                                     </div>
                                 </div>
@@ -338,7 +345,7 @@
                         </div>
                     </div>
                     <div class="o-menu__hide-cta">
-                        <a href="#organisms-navigation-menu"><span class="fa fa-angle-double-right"></span></a>
+                        <a href="#organisms-navigation-menu"><span class="fa fa-angle-double-right" aria-hidden="true"></span></a>
                     </div>
                     <!-- We override the default position on purpose for the demo, we don't want it floating in absolute position -->
                     <div class="o-menu__navigation-pane is-visible" style="position: static">
@@ -358,7 +365,7 @@
                 </div>
             </div>
             <div>
-                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class=&quot;o-menu is-docked&quot;&gt;
+                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class=&quot;o-menu is-docked&quot;&gt;
     &lt;!-- Exactly the same markup as the first example --&gt;
 &lt;/div&gt;
                  </code></pre>
@@ -374,7 +381,7 @@
                     where the second menu slides from the right over the first menu.</p>
             </div>
             <div>
-                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class=&quot;o-menu__navigation-pane is-visible&quot;&gt;
+                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class=&quot;o-menu__navigation-pane is-visible&quot;&gt;
     &lt;div class=&quot;o-navigation-pane__overlay&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;o-navigation-pane__wrapper&quot;&gt;
         &lt;div class=&quot;o-menu__main-submenu&quot;&gt;&lt;/div&gt;
@@ -385,7 +392,8 @@
                  </code></pre>
             </div>
         </div>
-
+    </div>
+    <div class="u-container">
         <a name="organisms-slideshow" aria-label="Slideshow"></a>
         <h3 class="u-margin-top-lg">Slideshow</h3>
         <h4 class="u-margin-top-lg">Regular slideshow</h4>
@@ -394,14 +402,16 @@
             <div>
                 <div class="o-slideshow">
                     <div class="o-slideshow__inner">
-                        <div class="o-slideshow__prev"></div>
+                        <button class="a-button o-slideshow__prev">
+                            <span class="u-screen-reader-only">Previous image</span>
+                        </button>
                         <div class="o-slideshow__slides">
                             <figure class="o-slideshow__slide is-active">
                                 <div class="o-slideshow__image">
                                     <div class="m-image">
-                                        <img src="https://placeimg.com/1000/500/tech" alt="slideshow image 1">
+                                        <img src="https://placeimg.com/1000/500/tech" alt="Slideshow image 1.">
                                         <div class="m-image__copyright a-copyright" aria-haspopup="true">
-                                            <div class="a-copyright__sign"><span class="fa fa-copyright"></span></div>
+                                            <div class="a-copyright__sign"><span class="fa fa-copyright" aria-hidden="true"></span></div>
                                             <span class="a-copyright__label">Lorem Pixel</span>
                                         </div>
                                     </div>
@@ -410,9 +420,9 @@
                             <figure class="o-slideshow__slide">
                                 <div class="o-slideshow__image">
                                     <div class="m-image">
-                                        <img src="https://placeimg.com/1000/500/tech" alt="slideshow image 2">
+                                        <img src="https://placeimg.com/1000/500/tech" alt="Slideshow image 2.">
                                         <div class="m-image__copyright a-copyright" aria-haspopup="true">
-                                            <div class="a-copyright__sign"><span class="fa fa-copyright"></span></div>
+                                            <div class="a-copyright__sign"><span class="fa fa-copyright" aria-hidden="true"></span></div>
                                             <span class="a-copyright__label">Lorem Pixel</span>
                                         </div>
                                     </div>
@@ -421,16 +431,18 @@
                             <figure class="o-slideshow__slide">
                                 <div class="o-slideshow__image">
                                     <div class="m-image">
-                                        <img src="https://placeimg.com/1000/500/tech" alt="slideshow image 3">
+                                        <img src="https://placeimg.com/1000/500/tech" alt="Slideshow image 3.">
                                         <div class="m-image__copyright a-copyright" aria-haspopup="true">
-                                            <div class="a-copyright__sign"><span class="fa fa-copyright"></span></div>
+                                            <div class="a-copyright__sign"><span class="fa fa-copyright" aria-hidden="true"></span></div>
                                             <span class="a-copyright__label">Lorem Pixel</span>
                                         </div>
                                     </div>
                                 </div>
                             </figure>
                         </div>
-                        <div class="o-slideshow__next"></div>
+                        <button class="a-button o-slideshow__next">
+                            <span class="u-screen-reader-only">Next image</span>
+                        </button>
                     </div>
                     <figcaption class="o-slideshow__footer">
                         <span class="o-slideshow__counter">1 | 3</span>
@@ -439,16 +451,18 @@
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="o-slideshow"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="o-slideshow"&gt;
   &lt;div class="o-slideshow__inner"&gt;
-    &lt;div class="o-slideshow__prev"&gt;&lt;/div&gt;
+    &lt;button class="a-button o-slideshow__prev"&gt;
+      &lt;span class="u-screen-reader-only"&gt;Previous image&lt;/span&gt;
+    &lt;/button&gt;
     &lt;div class="o-slideshow__slides"&gt;
       &lt;figure class="o-slideshow__slide is-active"&gt;
         &lt;div class="o-slideshow__image"&gt;
           &lt;div class="m-image"&gt;
-            &lt;img src="https://placeimg.com/1000/500/tech" alt="slideshow image 1"&gt;
+            &lt;img src="https://placeimg.com/1000/500/tech" alt="Slideshow image 1."&gt;
             &lt;div class="m-image__copyright a-copyright" aria-haspopup="true"&gt;
-              &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright"&gt;&lt;/span&gt;&lt;/div&gt;
+              &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright" aria-hidden="true"&gt;&lt;/span&gt;&lt;/div&gt;
               &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
             &lt;/div&gt;
           &lt;/div&gt;
@@ -457,9 +471,9 @@
       &lt;figure class="o-slideshow__slide"&gt;
         &lt;div class="o-slideshow__image"&gt;
           &lt;div class="m-image"&gt;
-            &lt;img src="https://placeimg.com/1000/500/tech" alt="slideshow image 2"&gt;
+            &lt;img src="https://placeimg.com/1000/500/tech" alt="Slideshow image 2."&gt;
             &lt;div class="m-image__copyright a-copyright" aria-haspopup="true"&gt;
-              &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright"&gt;&lt;/span&gt;&lt;/div&gt;
+              &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright" aria-hidden="true"&gt;&lt;/span&gt;&lt;/div&gt;
               &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
             &lt;/div&gt;
           &lt;/div&gt;
@@ -468,16 +482,18 @@
       &lt;figure class="o-slideshow__slide"&gt;
         &lt;div class="o-slideshow__image"&gt;
           &lt;div class="m-image"&gt;
-            &lt;img src="https://placeimg.com/1000/500/tech" alt="slideshow image 3"&gt;
+            &lt;img src="https://placeimg.com/1000/500/tech" alt="Slideshow image 3."&gt;
             &lt;div class="m-image__copyright a-copyright" aria-haspopup="true"&gt;
-              &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright"&gt;&lt;/span&gt;&lt;/div&gt;
+              &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright" aria-hidden="true"&gt;&lt;/span&gt;&lt;/div&gt;
               &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
             &lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/figure&gt;
     &lt;/div&gt;
-    &lt;div class="o-slideshow__next"&gt;&lt;/div&gt;
+    &lt;button class="a-button o-slideshow__next"&gt;
+      &lt;span class="u-screen-reader-only"&gt;Next image&lt;/span&gt;
+    &lt;/button&gt;
   &lt;/div&gt;
   &lt;figcaption class="o-slideshow__footer"&gt;
     &lt;span class="o-slideshow__counter"&gt;1 | 3&lt;/span&gt;
@@ -494,10 +510,14 @@
                     <div class="a-switch">
                         <label class="a-switch__label">Hide slideshow overlay</label>
                         <div class="a-switch__toggle">
-                            <input type="checkbox" name="input-slideshow" id="input-slideshow" role="switch" aria-checked="false">
-                            <label for="input-slideshow"><span class="u-screen-reader-only">Toggle overlay</span></label>
+                            <input type="checkbox" name="input-slideshow" id="input-slideshow" role="switch"
+                                   aria-checked="false">
+                            <label for="input-slideshow"><span
+                                class="u-screen-reader-only">Toggle overlay</span></label>
                             <div class="m-overlay">
-                                <label for="input-slideshow"><a class="m-overlay__button"><span class="fa fa-close"><span class="u-screen-reader-only">Close overlay</span></span></a></label>
+                                <label for="input-slideshow"><a class="m-overlay__button"><span
+                                    class="fa fa-close"><span
+                                    class="u-screen-reader-only">Close overlay</span></span></a></label>
                                 <div class="m-overlay__slideshow o-slideshow o-slideshow--transparent">
                                     <div class="o-slideshow__inner">
                                         <div class="o-slideshow__prev o-slideshow__prev--outside"></div>
@@ -505,9 +525,9 @@
                                             <figure class="o-slideshow__slide is-active">
                                                 <div class="o-slideshow__image">
                                                     <div class="m-image">
-                                                        <img src="https://placeimg.com/1900/950/tech" alt="slideshow image 1">
+                                                        <img src="https://placeimg.com/1900/950/tech" alt="Slideshow image 1.">
                                                         <div class="m-image__copyright a-copyright" aria-haspopup="true">
-                                                            <div class="a-copyright__sign"><span class="fa fa-copyright"></span></div>
+                                                            <div class="a-copyright__sign"><span class="fa fa-copyright" aria-hidden="true"></span></div>
                                                             <span class="a-copyright__label">Lorem Pixel</span>
                                                         </div>
                                                     </div>
@@ -516,9 +536,9 @@
                                             <figure class="o-slideshow__slide">
                                                 <div class="o-slideshow__image">
                                                     <div class="m-image">
-                                                        <img src="https://placeimg.com/1000/500/tech" alt="slideshow image 2">
+                                                        <img src="https://placeimg.com/1000/500/tech" alt="Slideshow image 2.">
                                                         <div class="m-image__copyright a-copyright" aria-haspopup="true">
-                                                            <div class="a-copyright__sign"><span class="fa fa-copyright"></span></div>
+                                                            <div class="a-copyright__sign"><span class="fa fa-copyright" aria-hidden="true"></span></div>
                                                             <span class="a-copyright__label">Lorem Pixel</span>
                                                         </div>
                                                     </div>
@@ -527,9 +547,10 @@
                                             <figure class="o-slideshow__slide">
                                                 <div class="o-slideshow__image">
                                                     <div class="m-image">
-                                                        <img src="https://placeimg.com/1000/500/tech" alt="slideshow image 3">
+                                                        <img src="https://placeimg.com/1000/500/tech"
+                                                             alt="Slideshow image 3.">
                                                         <div class="m-image__copyright a-copyright" aria-haspopup="true">
-                                                            <div class="a-copyright__sign"><span class="fa fa-copyright"></span></div>
+                                                            <div class="a-copyright__sign"><span class="fa fa-copyright" aria-hidden="true"></span></div>
                                                             <span class="a-copyright__label">Lorem Pixel</span>
                                                         </div>
                                                     </div>
@@ -550,7 +571,7 @@
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="m-overlay"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-overlay"&gt;
   &lt;label for="input-slideshow"&gt;&lt;a class="m-overlay__button"&gt;&lt;span class="fa fa-close"&gt;&lt;span class="u-screen-reader-only"&gt;Close overlay&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/label&gt;
   &lt;div class="m-overlay__slideshow o-slideshow o-slideshow--transparent"&gt;
     &lt;div class="o-slideshow__inner"&gt;
@@ -559,9 +580,9 @@
         &lt;figure class="o-slideshow__slide is-active"&gt;
           &lt;div class="o-slideshow__image"&gt;
             &lt;div class="m-image"&gt;
-              &lt;img src="https://placeimg.com/1000/500/tech" alt="slideshow image 1"&gt;
+              &lt;img src="https://placeimg.com/1000/500/tech" alt="Slideshow image 1."&gt;
               &lt;div class="m-image__copyright a-copyright" aria-haspopup="true"&gt;
-                &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright"&gt;&lt;/span&gt;&lt;/div&gt;
+                &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright" aria-hidden="true"&gt;&lt;/span&gt;&lt;/div&gt;
                 &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
               &lt;/div&gt;
             &lt;/div&gt;
@@ -570,9 +591,9 @@
         &lt;figure class="o-slideshow__slide"&gt;
           &lt;div class="o-slideshow__image"&gt;
             &lt;div class="m-image"&gt;
-              &lt;img src="https://placeimg.com/1000/500/tech" alt="slideshow image 2"&gt;
+              &lt;img src="https://placeimg.com/1000/500/tech" alt="Slideshow image 2."&gt;
               &lt;div class="m-image__copyright a-copyright" aria-haspopup="true"&gt;
-                &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright"&gt;&lt;/span&gt;&lt;/div&gt;
+                &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright" aria-hidden="true"&gt;&lt;/span&gt;&lt;/div&gt;
                 &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
               &lt;/div&gt;
             &lt;/div&gt;
@@ -581,9 +602,9 @@
         &lt;figure class="o-slideshow__slide"&gt;
           &lt;div class="o-slideshow__image"&gt;
             &lt;div class="m-image"&gt;
-              &lt;img src="https://placeimg.com/1000/500/tech" alt="slideshow image 3"&gt;
+              &lt;img src="https://placeimg.com/1000/500/tech" alt="Slideshow image 3."&gt;
               &lt;div class="m-image__copyright a-copyright" aria-haspopup="true"&gt;
-                &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright"&gt;&lt;/span&gt;&lt;/div&gt;
+                &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright" aria-hidden="true"&gt;&lt;/span&gt;&lt;/div&gt;
                 &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
               &lt;/div&gt;
             &lt;/div&gt;
@@ -619,7 +640,7 @@
                 </ul>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="o-tag-list"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="o-tag-list"&gt;
   &lt;li class="m-tag"&gt;&lt;span class="m-tag__label"&gt;Thomas Edison&lt;/span&gt;&lt;/li&gt;
   &lt;li class="m-tag"&gt;&lt;span class="m-tag__label"&gt;Leonardo da Vinci&lt;/span&gt;&lt;/li&gt;
   &lt;li class="m-tag"&gt;&lt;span class="m-tag__label"&gt;Albert Einstein&lt;/span&gt;&lt;/li&gt;
@@ -636,31 +657,34 @@
                 <ul class="o-tag-list">
                     <li class="m-tag">
                         <span class="m-tag__label">Thomas Edison</span>
-                        <button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"><span class="fa fa-close"></span></button>
+                        <button class="a-button-transparent a-button--small a-button--danger has-icon"
+                                aria-label="Delete"><span class="fa fa-close" aria-hidden="true"></span></button>
                     </li>
                     <li class="m-tag">
                         <span class="m-tag__label">Leonardo da Vinci</span>
-                        <button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"><span class="fa fa-close"></span></button>
+                        <button class="a-button-transparent a-button--small a-button--danger has-icon"
+                                aria-label="Delete"><span class="fa fa-close" aria-hidden="true"></span></button>
                     </li>
                     <li class="m-tag">
                         <span class="m-tag__label">Albert Einstein</span>
-                        <button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"><span class="fa fa-close"></span></button>
+                        <button class="a-button-transparent a-button--small a-button--danger has-icon"
+                                aria-label="Delete"><span class="fa fa-close" aria-hidden="true"></span></button>
                     </li>
                 </ul>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="o-tag-list"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="o-tag-list"&gt;
   &lt;li class="m-tag"&gt;
     &lt;span class="m-tag__label"&gt;Thomas Edison&lt;/span&gt;
-    &lt;button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"&gt;&lt;span class="fa fa-close"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
   &lt;/li&gt;
   &lt;li class="m-tag"&gt;
     &lt;span class="m-tag__label"&gt;Leonardo da Vinci&lt;/span&gt;
-    &lt;button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"&gt;&lt;span class="fa fa-close"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
   &lt;/li&gt;
   &lt;li class="m-tag"&gt;
     &lt;span class="m-tag__label"&gt;Albert Einstein&lt;/span&gt;
-    &lt;button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"&gt;&lt;span class="fa fa-close"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
@@ -669,31 +693,34 @@
             <div>
                 <ul class="o-tag-list">
                     <li class="m-tag">
-                        <button class="a-button a-button--default a-button--small has-icon" aria-label="Accept"><span class="fa fa-check"></span></button>
+                        <button class="a-button a-button--default a-button--small has-icon" aria-label="Accept"><span
+                            class="fa fa-check" aria-hidden="true"></span></button>
                         <span class="m-tag__label">Thomas Edison</span>
                     </li>
                     <li class="m-tag">
-                        <button class="a-button a-button--success a-button--small has-icon" aria-label="Accept"><span class="fa fa-check"></span></button>
+                        <button class="a-button a-button--success a-button--small has-icon" aria-label="Accept"><span
+                            class="fa fa-check" aria-hidden="true"></span></button>
                         <span class="m-tag__label">Leonardo da Vinci</span>
                     </li>
                     <li class="m-tag">
-                        <button class="a-button a-button a-button--small has-icon" aria-label="Drag"><span class="fa fa-arrows"></span></button>
+                        <button class="a-button a-button a-button--small has-icon" aria-label="Drag"><span
+                            class="fa fa-arrows" aria-hidden="true"></span></button>
                         <span class="m-tag__label">Albert Einstein</span>
                     </li>
                 </ul>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="o-tag-list"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="o-tag-list"&gt;
   &lt;li class="m-tag"&gt;
-    &lt;button class="a-button a-button--default a-button--small has-icon" aria-label="Accept"&gt;&lt;span class="fa fa-check"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button class="a-button a-button--default a-button--small has-icon" aria-label="Accept"&gt;&lt;span class="fa fa-check" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
     &lt;span class="m-tag__label"&gt;Thomas Edison&lt;/span&gt;
   &lt;/li&gt;
   &lt;li class="m-tag"&gt;
-    &lt;button class="a-button a-button--success a-button--small has-icon" aria-label="Accept"&gt;&lt;span class="fa fa-check"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button class="a-button a-button--success a-button--small has-icon" aria-label="Accept"&gt;&lt;span class="fa fa-check" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
     &lt;span class="m-tag__label"&gt;Leonardo da Vinci&lt;/span&gt;
   &lt;/li&gt;
   &lt;li class="m-tag"&gt;
-    &lt;button class="a-button a-button a-button--small has-icon" aria-label="Drag"&gt;&lt;span class="fa fa-arrows"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button class="a-button a-button a-button--small has-icon" aria-label="Drag"&gt;&lt;span class="fa fa-arrows" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
     &lt;span class="m-tag__label"&gt;Albert Einstein&lt;/span&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</code></pre>

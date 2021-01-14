@@ -1,5 +1,20 @@
 # Changelog
 
+## [4.3.0] - 2021-01-14
+
+### Added
+- Updated components and documentation with many accessibility improvements
+
+### Changed
+- Updated to Core Branding v4.3.1
+- Improved overal accessibility
+
+### Fixed
+- Replaced the small caps font with the right one
+- Removed obsolete `@use` rules that caused problems when importing in external libraries
+- Fixed avatar images not loading in styleguide
+
+
 ## [4.2.1] - 2020-09-22
 
 ### Fixed
@@ -168,6 +183,7 @@
 - Initial release.
 
 
+[4.3.0]: https://github.com/a-ui/acpaas_branding_scss/tree/v4.3.0
 [4.2.1]: https://github.com/a-ui/acpaas_branding_scss/tree/v4.2.1
 [4.2.0]: https://github.com/a-ui/acpaas_branding_scss/tree/v4.2.0
 [4.1.1]: https://github.com/a-ui/acpaas_branding_scss/tree/v4.1.1
